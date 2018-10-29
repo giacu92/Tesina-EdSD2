@@ -1,0 +1,259 @@
+% Tratto da grfguide.[ps|pdf]:
+%
+%\graphicspath{<dir-list>}
+%    This optional declaration may be used to specify a list of directories in which to search
+%    for graphics files. The format is the same as for the LATEX 2e primitive \input@path.
+%    A list of directories, each in a {} group (even if there is only one in the list). For example:
+%    \graphicspath{{eps/}{tiff/}}
+%    would cause the system to look in the subdirectories eps and tiff of the current directory.
+%
+%\graphicspath{{FIGS/}}
+%
+% E` preferibile fare come segue, perche' in questo modo ad es. anche i .tex
+% possono essere messi in altre directory e inclusi senza indicarne il percorso.
+\makeatletter
+\let\input@path=\@undefined
+\def\input@path{{FIGS/}}
+\makeatother
+
+\ifx\pdfoutput\undefined % We are not running pdftex
+\documentclass[12pt,a4paper]{book}
+
+\usepackage[dvips]{graphicx,color}
+% \usepackage{psfig}
+% \usepackage{epsfig}
+\DeclareGraphicsExtensions{.ps,.eps,.pstex}
+% Use the following line if you want to obtain a .pdf through dvipdfm
+% (.tex -(latex)-> .dvi -(dvipdfm)-> .pdf)
+\RequirePackage[dvipdfm,hyperindex]{hyperref}
+% % \RequirePackage[dvipdfm,colorlinks,hyperindex]{hyperref}
+% Use the following two lines if you want to obtain a .pdf with hyperlinks
+% also through ps2pdf (.tex -(latex)-> .dvi -(dvips)-> .ps -(ps2pdf)-> .pdf)
+% (this can be useful if you want to use Inkscape and PSFrag to put
+%  equations in the figure)
+% \RequirePackage[hyperindex]{hyperref}
+% \usepackage{psfrag}
+% % \RequirePackage[hypertex]{hyperref}
+\else % We are running pdftex
+\documentclass[pdftex,12pt,a4paper]{report}
+\usepackage[pdftex]{graphicx,color}
+\DeclareGraphicsExtensions{.pdf,.png,.jpg,.mps}
+\RequirePackage[hyperindex]{hyperref}
+% % \RequirePackage[colorlinks,hyperindex]{hyperref}
+% % \usepackage{thumbpdf}
+\hypersetup{
+pdftitle={Progetto e caratterizzazione di un dispositivo elettromagnetico per il rilevamento
+della disponibilità di parcheggio},
+pdfsubject={Tesi Laurea Triennale},
+pdfauthor={Giacomo Mammarella},
+pdfkeywords={Modello, tesi, LaTeX, PDF, Howto, pdflatex, dvipdfm},
+% pdfpagemode=FullScreen
+}
+\fi
+
+\usepackage{times}
+%\usepackage{mathptmx}
+\usepackage[scaled=.90]{helvet}
+\usepackage{courier}
+\usepackage{float}
+
+\textwidth	140 mm
+\textheight	210 mm
+\headheight	 10 mm
+\headsep	  8 mm
+\hoffset	 14.6 mm
+\oddsidemargin	  0 mm
+\voffset	  9.6 mm
+\topmargin	  0 mm
+\renewcommand{\baselinestretch}{1.14}
+% \renewcommand{\baselinestretch}{1}
+% \baselineskip = 20 pt
+
+\date{~}
+\newlength{\defaultparindent}
+\setlength{\defaultparindent}{\parindent}
+
+\usepackage{enumerate}
+\usepackage{float}
+
+\usepackage[italian]{babel}
+\usepackage[utf8]{inputenc}
+%\usepackage[latin1]{inputenc}
+%\usepackage[applemac]{inputenc}
+
+\frenchspacing
+
+\usepackage{amssymb,amstext,amsmath}
+%\usepackage{bigint}
+%\usepackage{esint}
+%\usepackage{multirow}
+\usepackage{listings}
+\usepackage{color}
+\usepackage{subfig}
+
+\newcommand{\ty}{\tilde{y}}
+\newcommand{\tM}{\widetilde{M}}
+\newcommand{\tSIR}{\text{SIR}}
+\newcommand{\tout}{\text{out}}
+\newcommand{\thit}{\text{hit}}
+\newcommand{\thop}{\text{hop}}
+\newcommand{\setawn}{\left( \sigma_{w_n} , \eta_{w_n} \right)}
+\newcommand{\var}{\text{var}}
+%\def\myvector#1{\underline{#1}}
+%\def\myversor#1{\hat{\underline{#1}}}
+\newcommand{\myvector}[1]{\underline{#1}}
+\newcommand{\myversor}[1]{\hat{\underline{#1}}}
+%\newcommand{\myvector}[1]{\text{\boldmath $#1$}}
+%\newcommand{\myversor}[1]{\hat{\text{\boldmath $#1$}}}
+%\newcommand{\mymatrix}[1]{\text{\boldmath $#1$}}
+\newcommand{\mymatrix}[1]{\pmb{#1}}
+\newcommand{\erf}{\text{erf}}
+\newcommand{\erfc}{\text{erfc}}
+\newcommand{\erfinv}{\text{erfinv}}
+\newcommand{\inverf}{\text{inverf}}
+\newcommand{\rect}{\text{rect}}
+\newcommand{\rep}{\text{rep}}
+\newcommand{\sinc}{\text{sinc}}
+\newcommand{\sgn}{\text{sgn}}
+\newcommand{\conv}{\otimes}
+\newcommand{\T}{\mathbb{T}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\F}{\mathcal{F}}
+
+\RequirePackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+%\renewcommand{\chaptermark}[1]{\markboth{\scshape \chaptername\ \thechapter\ -- #1}{}}
+\renewcommand{\chaptermark}[1]{\markboth{\chaptername\ \thechapter\ -- #1}{}}
+\fancyhead[L]{\leftmark}
+\fancyhead[R]{\thepage}
+
+% Per far numerare anche le subsubsection:
+\setcounter{secnumdepth}{3} % il default è 2 e quindi comprende fino alle subsection
+% Per far inserire anche le subsubsection nella Table Of Contents:
+\setcounter{tocdepth}{3}    % il default è 2 e quindi comprende fino alle subsection
+
+\usepackage{verbatim}
+
+%%MY STYLES
+%%%%%%%%%%%
+%%  XML  %%
+%%%%%%%%%%%
+\definecolor{gray}{rgb}{0.4,0.4,0.4}
+\definecolor{darkblue}{rgb}{0.0,0.0,0.6}
+\definecolor{cyan}{rgb}{0.0,0.6,0.6}
+\DeclareFixedFont{\ttb}{T1}{txtt}{bx}{n}{12} % for bold
+\DeclareFixedFont{\ttm}{T1}{txtt}{m}{n}{12}  % for normal
+\definecolor{deepblue}{rgb}{0,0,0.5}
+\definecolor{deepred}{rgb}{0.6,0,0}
+\definecolor{deepyellow}{rgb}{0.6,0.6,0}
+\definecolor{deepgreen}{rgb}{0,0.5,0}
+
+\lstset{
+  basicstyle=\ttfamily,
+  columns=fullflexible,
+  showstringspaces=false,
+  commentstyle=\color{gray}\upshape,
+  breaklines=true,
+}
+
+\lstdefinelanguage{XML}
+{
+  morestring=[b]",
+  morestring=[s]{>}{<},
+  morecomment=[s]{<?}{?>},
+  stringstyle=\color{black},
+  identifierstyle=\color{darkblue},
+  keywordstyle=\color{cyan},
+  morekeywords={xmlns,version,type}% list your attributes here
+}
+
+%%%%%%%%%%%
+%%  PHP  %%
+%%%%%%%%%%%
+\lstdefinelanguage{PHP}
+{
+  morestring=[b]",
+  morestring=[s]{"}{"},
+  stringstyle     =\color{deepgreen},
+  identifierstyle =\color{black},
+  otherkeywords   = {fopen, fclose, bcadd, fwrite, bccomp, bcsub, true, false, ksort, isset, fgets, round, substr, preg_match, feof, trim, explode},   
+  keywordstyle    =\color{darkblue},
+  commentstyle    = \color{gray},
+  emph            =[1]{php, <?php, ?>},
+  emphstyle       =[1]\color{black},
+  emph            =[2]{if,and,or,else,while,for, foreach, as},
+  emphstyle       =[2]\color{deepred}
+}
+
+%%%%%%%%%%%%
+%%  BASH  %%
+%%%%%%%%%%%%
+\lstdefinelanguage{BASH}
+{
+  stringstyle=\color{black},
+  identifierstyle=\color{darkblue},
+  commentstyle=\color{red},
+  keywordstyle=\color{blue},
+  morekeywords={xmlns,version,type}% list your attributes here
+}
+
+%%%%%%%%%%%%
+%% PYTHON %%
+%%%%%%%%%%%%
+\lstdefinelanguage{PYTHON}
+{
+  morestring=[s]{"}{"},
+  stringstyle=\color{deepgreen},
+  identifierstyle =\color{black},
+  basicstyle=\ttm,
+  otherkeywords={self, import, def, class, except, open, while, str, handle.write, handle.close},             % Add keywords here
+  keywordstyle=\ttb\color{deepblue},
+  emph={MyClass,__init__},          % Custom highlighting
+  emphstyle=\ttb\color{deepred},    % Custom highlighting style
+  frame=tb,                         % Any extra options here
+  showstringspaces=false,           % 
+}
+
+\graphicspath{{FIGS/}}
+
+\begin{document}
+
+\pagenumbering{arabic}
+
+\setcounter{chapter}{0}
+\setcounter{section}{1}
+
+\input{frontespizio1.tex}
+%\input{dedica}
+%\input{Sommario}
+\newpage
+
+\tableofcontents
+
+\setcounter{page}{1}
+
+\input{Introduzione.tex}
+\newpage
+
+\input{Prima_Istanziazione.tex}
+
+\end{document}  
+
+%\input{Capitolo2}
+%\input{Capitolo3}
+%\input{Capitolo4}
+%\input{Capitolo5}
+
+%\newpage
+%\listoffigures
+%\addcontentsline{toc}{chapter}{Elenco delle figure}
+%\listoftables
+%\addcontentsline{toc}{chapter}{Elenco delle tabelle}
+%\newpage
+
+%\input{Ringraziamenti}
+%\addcontentsline{toc}{chapter}{Ringraziamenti}
+

@@ -101,10 +101,10 @@ In questa sezione ci si occupa di definire parte del set di istruzioni relativo 
 		\multicolumn{1}{|l|}{Jump at Base+Offset}	&
 		\multicolumn{1}{|c|}{JBO}  &
 		\multicolumn{1}{|c|}{0111}	&
-		\multicolumn{1}{|c|}{$B_3B_2B_1B_0$} &
 		\multicolumn{1}{|c|}{$O_3O_2O_1O_0$} &
+		\multicolumn{1}{|c|}{$B_3B_2B_1B_0$} &
 %		\multicolumn{1}{|c|}{-} &
-		\multicolumn{1}{|l|}{base, offset}	\\ \hline
+		\multicolumn{1}{|l|}{offset, base}	\\ \hline
 		
 		\multicolumn{1}{|l|}{Move reg A to B}	&
 		\multicolumn{1}{|c|}{MV}  &
@@ -127,21 +127,22 @@ Si suppone dunque che la fase di traduzione da codice assembler a linguaggio mac
 \section{Strategia e problematiche}
 La struttura interna della CPU sarà ricavata in questo paragrafo tenendo conto del set di istruzioni e delle prerogative di progetto.\\
 Anzitutto poiché dati e programmi sono reperiti a runtime dalla memoria RAM interna sarà necessario dotare la CPU di sistemi che permettano l'indirizzamento della memoria ai programmi ed al dato. In particolare si necessiterà quindi di due puntatori: un \textquotedblleft program counter" ed un \textquotedblleft data counter". Il PC conterrà l'indirizzo relativo alla prossima istruzione da eseguire, mentre il DC contiene l'indirizzo relativo al dato da prelevare.
-In generale si può considerare che l'indirizzo per la lettura/scrittura della memoria può avere due sorgenti:
+In generale si può considerare che l'indirizzo per la lettura/scrittura della memoria può avere tre sorgenti:
 \begin{itemize}
 	\item il PC: come nel caso del prelievo delle istruzioni.
 	\item il DC: come nel caso del prelievo/scrittura dei dati.
+	\item un indirizzo generato internamente dalla CPU, ad esempio a seguito di un calcolo.
 \end{itemize}
-A tal proposito, nel procedere al corretto indirizzamento della memoria, l'uscita del bus indirizzi sarà pilotata da un registro al cui ingresso è presente un multiplexer controllato dalla UC interna col fine di discriminare quale dei due registri sorgenti contenga il valore di indirizzo corretto.\\
-Entrambi i registri PC e DC, devono essere aggiornati (incrementati di 1) ad ogni prelievo relativamente di un'istruzione o di un dato. A tal proposito si doteranno entrambi i registri della possibilità di auto-incremento affiancando agli stessi un sommatore semplice.
+A tal proposito, nel procedere al corretto indirizzamento della memoria, l'uscita del bus indirizzi sarà pilotata da un registro al cui ingresso è presente un multiplexer controllato dalla UC interna col fine di discriminare quale dei tre registri sorgenti contenga il valore col quale indirizzare la memoria.\\
+Entrambi i registri PC e DC, devono essere aggiornati (incrementati di 1) ad ogni prelievo relativamente di un'istruzione o di un dato. A tal proposito si doteranno entrambi i registri della possibilità di auto-incremento affiancando agli stessi un sommatore semplice.\\
+Per dotare la CPU della possibilità di indirizzare la memoria da programma (come nel caso della RD e della WR) si può pensare di connettere uno dei registri interni presenti nel banco d'appoggio al mux di selezione. In tale caso l'indirizzamento della memoria sarà possibile senza compromettere i valori presenti in PC e DC. Tale registro avrà la funzione speciale di poter indirizzare la memoria e la sua etichetta sarà definita AR0.
 \par \bigskip \noindent
-Nel caso dell'operazione di RD si vuole garantire la possibilità che l'indirizzo da fornire alla RAM per la lettura possa provenire da uno dei registri interni della CPU. Questo per fare in modo che l'indirizzo per la memoria possa essere generato internamente, ad esempio a seguito di un calcolo. A tal proposito si può pensare di inserire un particolare registro d'appoggio presente nel banco dei registri interni e denominato AR0 che possa pilotare direttamente il bus indirizzi. Il dato letto viene caricato sul registro bidirezionale in/out.
+Nel caso dell'operazione di RD l'indirizzo di lettura si suppone già presente nel registro AR0. Successivamente si effettua una lettura a tale indirizzo salvando il dato proveniente dalla RAM sul registro bidirezionale in/out.
+Nel caso dell'operazione di WR si suppone che il dato da salvare sia già stato precaricato all'interno del registro bidirezionale in/out che pilota il bus dati dal lato CPU. Come nel caso della read, l'indirizzo su cui salvare il dato sarà stato precedentemente posto in AR0. L'operazione termina abilitando la memoria al salvataggio del dato su tale indirizzo.
 \par \bigskip \noindent
-Nel caso delle operazione di WR, come nel caso della RD, l'indirizzo sul quale effettuare la scrittura proviene dal registro AR0 interno al banco d'appoggio della CPU. Si suppone che il dato da salvare sia già stato precaricato all'interno del registro bidirezionale in/out che pilota il bus dati dal lato CPU.
+Nel caso della jump immediata l'indirizzo di salto è indicato dal valore del dato prelevato dalla memoria. Il valore su cui effettuare il salto viene dapprima composto unendo le due letture della memoria che forniscono le due sottoparti dell'indirizzo nel registro AR0. Successivamente il PC verrà aggiornato al valore contenuto in AR0, indirizzato su di esso tramite multiplexer.
 \par \bigskip \noindent
-Nel caso della jump immediata l'indirizzo di salto è indicato dal valore del dato prelevato dalla memoria. Dunque si doterà il PC della possibilità di essere aggiornato al valore presente nel registro bidirezionale di ingresso/uscita, attraverso un mux di selezione.
-\par \bigskip \noindent
-Nel caso delle operazioni denominate JPO e JBO il risultato del salto è dato dalla somma di un indirizzo \textquotedblleft \textit{base}" e di un \textit{offset}. Dunque sarà utile dotare la CPU di una unità di calcolo ausiliare, in modo da non necessitare dell'impiego della ALU principale nel caso di calcolo di tali indirizzi di salto.
+Nel caso delle operazioni denominate JPO e JBO il risultato del salto è dato dalla somma di un indirizzo \textquotedblleft \textit{base}" e di un \textit{offset} riferito a tale base. A seguito di una o due letture necessarie al caricamento di offset e base ed al caricamento di queste in due particolari registri di appoggio denominati DRO e DRB il valore di PC viene aggiornato a quello corretto eseguendo il calcolo del nuovo indirizzo su di una unità di calcolo ausiliare. In questo modo non si necessiterà dell'impiego della ALU principale nel caso di calcolo di tali indirizzi di salto. Il collegamento elettrico che permette l'incremento del PC al valore corretto è presentato nel successivo schema di seconda istanziazione.
 \par \bigskip \noindent
 Infine, considerando la struttura elementare interna di un'architettura di Von Neumann come quella riportata in Figura \ref{fig:vn_cpu}, la CPU contiene al suo interno un banco di registri di appoggio al calcolo. In particolare, nel caso relativo a questo esercizio, oltre ai già noti PC e DC trovano posto:
 \begin{itemize}

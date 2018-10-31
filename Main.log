@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.5.3)  29 OCT 2018 20:45
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.5.3)  31 OCT 2018 17:28
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -785,7 +785,7 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 7.
 (/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-<FIGS/logo_univ.png, id=51, 290.08376pt x 361.35pt>
+<FIGS/logo_univ.png, id=79, 290.08376pt x 361.35pt>
 File: FIGS/logo_univ.png Graphic file (type png)
  <use FIGS/logo_univ.png>
 Package pdftex.def Info: FIGS/logo_univ.png used on input line 8.
@@ -795,7 +795,7 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
 LaTeX Font Info:    Font shape `OT1/ptm/bx/sc' in size <12> not available
 (Font)              Font shape `OT1/ptm/b/sc' tried instead on input line 16.
 
-<FIGS/logo_ing.png, id=53, 203.76125pt x 192.72pt>
+<FIGS/logo_ing.png, id=81, 203.76125pt x 192.72pt>
 File: FIGS/logo_ing.png Graphic file (type png)
  <use FIGS/logo_ing.png>
 Package pdftex.def Info: FIGS/logo_ing.png used on input line 18.
@@ -835,7 +835,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 3--6
 
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <17.28> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 7.
-<FIGS/0_von_neumann.png, id=79, 604.2575pt x 489.83pt>
+<FIGS/0_von_neumann.png, id=114, 604.2575pt x 489.83pt>
 File: FIGS/0_von_neumann.png Graphic file (type png)
 
 <use FIGS/0_von_neumann.png>
@@ -852,7 +852,7 @@ File: omsptm.fd
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <12> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 24.
  [3 <./FIGS/0_von_neumann.png>] [4]
-<FIGS/0_4004_instruction_set.png, id=96, 506.89375pt x 679.53876pt>
+<FIGS/0_4004_instruction_set.png, id=131, 506.89375pt x 679.53876pt>
 File: FIGS/0_4004_instruction_set.png Graphic file (type png)
 
 <use FIGS/0_4004_instruction_set.png>
@@ -865,21 +865,21 @@ LaTeX Font Info:    Try loading font information for OT1+pcr on input line 46.
 (/usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 )
-<FIGS/0_vn_cpu.png, id=103, 323.2075pt x 452.69125pt>
+<FIGS/0_vn_cpu.png, id=138, 323.2075pt x 452.69125pt>
 File: FIGS/0_vn_cpu.png Graphic file (type png)
  <use FIGS/0_vn_cpu.png>
 Package pdftex.def Info: FIGS/0_vn_cpu.png used on input line 79.
 (pdftex.def)             Requested size: 161.60335pt x 226.34506pt.
 
 [6] [7 <./FIGS/0_vn_cpu.png>]
-<FIGS/0_memoria_separata.png, id=122, 345.29pt x 528.97626pt>
+<FIGS/0_memoria_separata.png, id=157, 345.29pt x 528.97626pt>
 File: FIGS/0_memoria_separata.png Graphic file (type png)
 
 <use FIGS/0_memoria_separata.png>
 Package pdftex.def Info: FIGS/0_memoria_separata.png used on input line 102.
 (pdftex.def)             Requested size: 138.11354pt x 211.58675pt.
  [8] [9 <./FIGS/0_memoria_separata.png>]
-[10] <FIGS/0_ist_zero.png, id=143, 1063.975pt x 609.27625pt>
+[10] <FIGS/0_ist_zero.png, id=179, 1063.975pt x 609.27625pt>
 File: FIGS/0_ist_zero.png Graphic file (type png)
 
 <use FIGS/0_ist_zero.png>
@@ -889,12 +889,11 @@ Package pdftex.def Info: FIGS/0_ist_zero.png used on input line 144.
 (./Prima_Istanziazione.tex
 Capitolo 2.
 
-Overfull \hbox (8.8257pt too wide) in paragraph at lines 2--2
-[]\OT1/ptm/b/n/17.28 Schema a bloc-chi e de-fi-ni-zio-ne dei se-gna-li IN/OUT: 
-
+Overfull \hbox (4.35025pt too wide) in paragraph at lines 2--2
+[]\OT1/ptm/b/n/17.28 Schema a bloc-chi e de-fi-ni-zio-ne dei se-gna-li IN/OUT 
  []
 
-<FIGS/1_prima_istanziazione.png, id=155, 709.65125pt x 310.15875pt>
+<FIGS/1_prima_istanziazione.png, id=191, 709.65125pt x 310.15875pt>
 File: FIGS/1_prima_istanziazione.png Graphic file (type png)
 
 <use FIGS/1_prima_istanziazione.png>
@@ -906,25 +905,69 @@ Package pdftex.def Info: FIGS/1_prima_istanziazione.png used on input line 6.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 55.
 
-[14] [15] [16] [17])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 243.
- [18]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 243.
+[14] [15] [16] [17]) (./Seconda_Istanziazione.tex [18]
+Capitolo 3.
+
+Overfull \hbox (4.35025pt too wide) in paragraph at lines 2--2
+[]\OT1/ptm/b/n/17.28 Schema a bloc-chi e de-fi-ni-zio-ne dei se-gna-li IN/OUT 
+ []
+
+[19
+
+] <FIGS/2_seconda_istanziazione.png, id=234, 995.72pt x 642.4pt>
+File: FIGS/2_seconda_istanziazione.png Graphic file (type png)
+
+<use FIGS/2_seconda_istanziazione.png>
+Package pdftex.def Info: FIGS/2_seconda_istanziazione.png used on input line 7.
+
+(pdftex.def)             Requested size: 597.43661pt x 385.44298pt.
+ [20 <./FIGS/2_seconda_istanziazione.png>]
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <12> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 24.
+ [21] <FIGS/2_register_bank.png, id=248, 1161.33875pt x 523.9575pt>
+File: FIGS/2_register_bank.png Graphic file (type png)
+
+<use FIGS/2_register_bank.png>
+Package pdftex.def Info: FIGS/2_register_bank.png used on input line 73.
+(pdftex.def)             Requested size: 406.47466pt x 183.38786pt.
+
+Overfull \hbox (8.13608pt too wide) in paragraph at lines 73--75
+ [][] 
+ []
+
+[22 <./FIGS/2_register_bank.png>]
+<FIGS/2_registro_bidir.png, id=255, 1173.38374pt x 504.88625pt>
+File: FIGS/2_registro_bidir.png Graphic file (type png)
+
+<use FIGS/2_registro_bidir.png>
+Package pdftex.def Info: FIGS/2_registro_bidir.png used on input line 87.
+(pdftex.def)             Requested size: 375.49046pt x 161.5669pt.
+ [23]
+<FIGS/2_AR0.png, id=260, 1207.51125pt x 435.6275pt>
+File: FIGS/2_AR0.png Graphic file (type png)
+ <use FIGS/2_AR0.png>
+Package pdftex.def Info: FIGS/2_AR0.png used on input line 97.
+(pdftex.def)             Requested size: 386.4115pt x 139.40364pt.
+
+[24 <./FIGS/2_registro_bidir.png> <./FIGS/2_AR0.png>])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 244.
+ [25]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 244.
  (./Main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 243.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 243.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 244.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 244.
 Package rerunfilecheck Info: File `Main.out' has not changed.
-(rerunfilecheck)             Checksum: EBC00670534E7BD698184B39F262FDD6;838.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 243.
+(rerunfilecheck)             Checksum: 3E647B4A179899E417E7F3D9EAAFCFBF;1425.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 244.
  ) 
 Here is how much of TeX's memory you used:
- 10358 strings out of 493014
- 147931 string characters out of 6133352
- 280148 words of memory out of 5000000
- 13666 multiletter control sequences out of 15000+600000
- 31255 words of font info for 70 fonts, out of 8000000 for 9000
+ 10418 strings out of 493014
+ 149018 string characters out of 6133352
+ 281582 words of memory out of 5000000
+ 13697 multiletter control sequences out of 15000+600000
+ 33432 words of font info for 73 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 44i,12n,43p,937b,1054s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 44i,12n,43p,1020b,1054s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/te
 xlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/tex
@@ -935,12 +978,13 @@ ve/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive
 texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2016/t
 exmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2016/texmf-dis
 t/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/ty
-pe1/urw/times/utmr8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/ti
-mes/utmri8a.pfb>
-Output written on Main.pdf (19 pages, 462967 bytes).
+pe1/urw/times/utmbi8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/t
+imes/utmr8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/times/utmri
+8a.pfb>
+Output written on Main.pdf (26 pages, 649340 bytes).
 PDF statistics:
- 246 PDF objects out of 1000 (max. 8388607)
- 196 compressed objects within 2 object streams
- 51 named destinations out of 1000 (max. 500000)
- 137 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 333 PDF objects out of 1000 (max. 8388607)
+ 266 compressed objects within 3 object streams
+ 71 named destinations out of 1000 (max. 500000)
+ 213 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,5 +1,5 @@
 \chapter{Prima istanziazione}
-\section{Schema a blocchi e definizione dei segnali IN/OUT:}
+\section{Schema a blocchi e definizione dei segnali IN/OUT}
 In base a quanto detto nel precedente capitolo si può procedere ad una prima istanziazione della CPU.
 \begin{figure}[H]
 	\centering
@@ -27,7 +27,7 @@ I segnali presenti a questo livello sono:
 	\end{itemize}
 \end{itemize}
 
-\section{Regola protocollare:}
+\section{Regola protocollare}
 \begin{itemize}
 	\item \textit{ESTERNO}:
 	\begin{enumerate}
@@ -44,7 +44,7 @@ I segnali presenti a questo livello sono:
 	\end{enumerate}
 \end{itemize}
 
-\section {Task eseguibili, set di istruzioni e organizzazione della RAM interna:}
+\section {Task eseguibili, set di istruzioni e organizzazione della RAM interna}
 In questa sezione ci si occupa di definire parte del set di istruzioni relativo a quanto discusso nel paragrafo \textquotedblleft Metodi di indirizzamento" di pagina \pageref{metodi_di_indirizzamento}. Riassumendo i task da eseguire e considerando i dati relativi a tali istruzioni si ottiene la seguente tabella.
 \begin{table}[H]
 	\centering
@@ -151,6 +151,6 @@ Infine, considerando la struttura elementare interna di un'architettura di Von N
 	\item 4 registri di supporto al calcolo di ADDR, tra cui AR0.
 	\item 1 registro bidirezionale per il salvataggio dei dati in ingresso/uscita, connesso al bus dati di sistema.
 \end{itemize}
-Su tutti questi registri si applica l'operazione di move parametrica (COD. OP: MV), la quale eseguirà la copia del contenuto di uno dei registri sorgente in un altro di destinazione. Per l'esecuzione di tale operazione si può pensare di inserire all'interno dell'area dedicata ai registri una logica combinatoria che apra il \textquotedblleft canale di transito" al dato dal registro sorgente a quello destinazione. Uno strobe da parte della UC master sul registro destinazione ne copierà il dato all'interno completando l'operazione. Per discriminare i registri coinvolgibili in tale operazione si doterà ognuno di questi di una etichetta caratteristica, ossia definita a livello di microcodice. Al programmatore sarà sufficiente scrivere i tag dei registi opportuni nella programmazione a livello assembler per garantire la riuscita dell'operazione in modo corretto.
+Su tutti questi registri si applica l'operazione di move parametrica (COD. OP: MV), la quale eseguirà la copia del contenuto di uno dei registri sorgente in un altro di destinazione, ad eccezione del registro ACC che fungerà solo da destinazione e non da sorgente. Per l'esecuzione di tale operazione si può pensare di inserire all'interno dell'area dedicata ai registri una logica combinatoria che apra il \textquotedblleft canale di transito" al dato dal registro sorgente a quello destinazione. Uno strobe da parte della UC master sul registro destinazione ne copierà il dato all'interno completando l'operazione. Per discriminare i registri coinvolgibili in tale operazione si doterà ognuno di questi di una etichetta caratteristica, ossia definita a livello di microcodice. Al programmatore sarà sufficiente scrivere i tag dei registi opportuni nella programmazione a livello assembler per garantire la riuscita dell'operazione in modo corretto.
 \par \bigskip \noindent
 Detto questo si può procedere alla seconda istanziazione della CPU.

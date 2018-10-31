@@ -8,7 +8,14 @@
 \contentsline {section}{Medoti di indirizzamento}{10}{section*.10}
 \contentsline {section}{Istanziazione zero}{11}{section*.11}
 \contentsline {chapter}{\numberline {2}Prima istanziazione}{13}{chapter.2}
-\contentsline {section}{\numberline {2.1}Schema a blocchi e definizione dei segnali IN/OUT:}{13}{section.2.1}
-\contentsline {section}{\numberline {2.2}Regola protocollare:}{14}{section.2.2}
-\contentsline {section}{\numberline {2.3}Task eseguibili, set di istruzioni e organizzazione della RAM interna:}{14}{section.2.3}
+\contentsline {section}{\numberline {2.1}Schema a blocchi e definizione dei segnali IN/OUT}{13}{section.2.1}
+\contentsline {section}{\numberline {2.2}Regola protocollare}{14}{section.2.2}
+\contentsline {section}{\numberline {2.3}Task eseguibili, set di istruzioni e organizzazione della RAM interna}{14}{section.2.3}
 \contentsline {section}{\numberline {2.4}Strategia e problematiche}{16}{section.2.4}
+\contentsline {chapter}{\numberline {3}Seconda istanziazione}{19}{chapter.3}
+\contentsline {section}{\numberline {3.1}Schema a blocchi e definizione dei segnali IN/OUT}{19}{section.3.1}
+\contentsline {section}{\numberline {3.2}Definizione ulteriore dei segnali interni}{21}{section.3.2}
+\contentsline {section}{\numberline {3.3}Ulteriori considerazioni di seconda istanziazione}{21}{section.3.3}
+\contentsline {section}{\numberline {3.4}Dimensionamento interno dei blocchi di seconda istanziazione}{22}{section.3.4}
+\contentsline {subsection}{\numberline {3.4.1}Register bank}{22}{subsection.3.4.1}
+\contentsline {subsection}{\numberline {3.4.2}Unit\IeC {\`a} di controllo: CU}{25}{subsection.3.4.2}

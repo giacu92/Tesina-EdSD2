@@ -6,7 +6,14 @@
 \BOOKMARK [1][-]{section*.10}{Medoti di indirizzamento}{chapter.1}% 6
 \BOOKMARK [1][-]{section*.11}{Istanziazione zero}{chapter.1}% 7
 \BOOKMARK [0][-]{chapter.2}{Prima istanziazione}{}% 8
-\BOOKMARK [1][-]{section.2.1}{Schema a blocchi e definizione dei segnali IN/OUT:}{chapter.2}% 9
-\BOOKMARK [1][-]{section.2.2}{Regola protocollare:}{chapter.2}% 10
-\BOOKMARK [1][-]{section.2.3}{Task eseguibili, set di istruzioni e organizzazione della RAM interna:}{chapter.2}% 11
+\BOOKMARK [1][-]{section.2.1}{Schema a blocchi e definizione dei segnali IN/OUT}{chapter.2}% 9
+\BOOKMARK [1][-]{section.2.2}{Regola protocollare}{chapter.2}% 10
+\BOOKMARK [1][-]{section.2.3}{Task eseguibili, set di istruzioni e organizzazione della RAM interna}{chapter.2}% 11
 \BOOKMARK [1][-]{section.2.4}{Strategia e problematiche}{chapter.2}% 12
+\BOOKMARK [0][-]{chapter.3}{Seconda istanziazione}{}% 13
+\BOOKMARK [1][-]{section.3.1}{Schema a blocchi e definizione dei segnali IN/OUT}{chapter.3}% 14
+\BOOKMARK [1][-]{section.3.2}{Definizione ulteriore dei segnali interni}{chapter.3}% 15
+\BOOKMARK [1][-]{section.3.3}{Ulteriori considerazioni di seconda istanziazione}{chapter.3}% 16
+\BOOKMARK [1][-]{section.3.4}{Dimensionamento interno dei blocchi di seconda istanziazione}{chapter.3}% 17
+\BOOKMARK [2][-]{subsection.3.4.1}{Register bank}{section.3.4}% 18
+\BOOKMARK [2][-]{subsection.3.4.2}{Unit\340 di controllo: CU}{section.3.4}% 19

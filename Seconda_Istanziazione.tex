@@ -1,15 +1,17 @@
 \chapter{Seconda istanziazione}
 \section{Schema a blocchi e definizione dei segnali IN/OUT}
 A partire da quanto esposto nel precedente capitolo segue lo schema di seconda istanziazione della CPU.
-\newpage
+%\newpage
+\subsection{Schema a blocchi}
 \begin{figure}[H]
 	\centering
-	\includegraphics[scale=0.60, angle=90]{2_seconda_istanziazione}
+	\includegraphics[scale=0.56, angle=90]{2_seconda_istanziazione}
 	\label{fig:seconda_istanziazione}
 \end{figure}
 
 \newpage
-\section{Definizione ulteriore dei segnali interni}
+\subsection{Segnali interni}
+I segnali interni presenti a questo livello sono i seguenti.
 \begin{itemize}
 	\item \textit{rst}: \{0: funzionamento normale; 1: reset prioritario per i registri interni\}.
 	\item \textit{str\_pc}: strobe per il registro PC.
@@ -145,13 +147,14 @@ Il registro non è dotato di buffer tri-state in ingresso/uscita, dunque sarà n
 \subsection{Unità di controllo: CU}
 \begin{figure}[H]
 	\centering
-	\includegraphics[scale=0.5, angle=90]{2_cu}
+	\includegraphics[scale=0.47, angle=90]{2_cu}
 	\label{fig:cu}
 \end{figure}
 \newpage
 \subsubsection{Segnali interni}
 I segnali interni che trovano posto all'interno dello schema di terza istanziazione della UC sono i seguenti:
 \begin{itemize}
+	\item \textit{rst}: \{0: funzionamento normale; 1: reset prioritario per tutti i registri\}.
 	\item \textit{str$\_$ir}: strobe per il registro istruzioni IR.
 	\item \textit{\textbf{cmd}}: uscita a 4 bit dell'IR.
 	\item \textit{str$\_$rm1}: strobe per il registro di supporto alla move RM1.
@@ -209,21 +212,51 @@ Esegue la scrittura del dato presente in D$\_$I/O nella memoria alla locazione i
 
 \newpage
 \subsubsection{Slave JPO$\_$JBO}
-Esegue la jump immediata, salvando il valore ricavato dalla memoria e salvato all'indirizzo AR0 sul Program Counter.
+Esegue la jump all'indirizzo dato dalla somma di una \textit{base} e un offset. Mentre l'offset proviene dalla memoria, la base può essere l'indirizzo corrente del PC o un ulteriore dato prelevato dalla memoria.
 \begin{figure}[H]
 	\centering
-	\includegraphics[scale=0.55]{ASM_ram_rd}
-	\label{fig:asm_ram_rd}
+	\includegraphics[scale=0.40]{asm_jp}
+	\label{fig:asm_jp}
 \end{figure}
 
 \newpage
 \subsubsection{Slave MV}
-Esegue la jump immediata, salvando il valore ricavato dalla memoria e salvato all'indirizzo AR0 sul Program Counter.
+Esegue la copia del dato da un registro sorgente ad uno destinazione indirizzati tramite etichetta prelevata dalla memoria.
 \begin{figure}[H]
 	\centering
-	\includegraphics[scale=0.55,]{ASM_ram_rd}
-	\label{fig:asm_ram_rd}
+	\includegraphics[scale=0.43]{asm_mv}
+	\label{fig:asm_mv}
 \end{figure}
 
+\newpage
+\subsubsection{ASM MASTER}
+Infine, il diagramma ASM per la macchina master che esegue le fasi di fetch e decode, delegando l'execute agli slave. Le azioni da svolgere sono:\\
+\par \bigskip \noindent
+FETCH:
+\begin{enumerate}
+	\item Poni PC su ADDR$\_$BUS, RAM in modalità di read.
+	\item Strobe REG$\_$ADDR
+	\item RIPETI: Strobe RAM e poni inv$\_$dir=1 FINCHÉ RAM$\_$data$\_$rd = 1
+	\item Strobe IR e incrementa PC
+\end{enumerate}
 
+\par \bigskip \noindent
+DECODE:
+\begin{enumerate}
+	\item L'uscita del registro istruzioni IR contiene il codice relativo all'istruzione da eseguire. Una serie di controlli interni identifica l'operazione definita dai segnali di \textbf{\textit{cmd}}.
+\end{enumerate}
+
+\par \bigskip \noindent
+EXECUTE (WRITE-BACK):
+\begin{enumerate}
+	\item Riconosciuta l'istruzione la macchina MASTER delega il controllo dell'hardware interno allo slave che eseguirà l'istruzione e cederà nuovamente il controllo alla master. Lo slave si occupa anche di un eventuale WRITE-BACK in memoria.
+\end{enumerate}
+
+\noindent
+Da cui il diagramma ASM per la macchina MASTER.
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.30, angle=90]{asm_master}
+	\label{fig:asm_master}
+\end{figure}
 

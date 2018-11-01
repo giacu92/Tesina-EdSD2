@@ -14,16 +14,18 @@
 \contentsline {section}{\numberline {2.4}Strategia e problematiche}{16}{section.2.4}
 \contentsline {chapter}{\numberline {3}Seconda istanziazione}{19}{chapter.3}
 \contentsline {section}{\numberline {3.1}Schema a blocchi e definizione dei segnali IN/OUT}{19}{section.3.1}
-\contentsline {section}{\numberline {3.2}Definizione ulteriore dei segnali interni}{21}{section.3.2}
-\contentsline {section}{\numberline {3.3}Ulteriori considerazioni di seconda istanziazione}{21}{section.3.3}
-\contentsline {section}{\numberline {3.4}Dimensionamento interno dei blocchi di seconda istanziazione}{22}{section.3.4}
-\contentsline {subsection}{\numberline {3.4.1}Register bank}{22}{subsection.3.4.1}
-\contentsline {subsection}{\numberline {3.4.2}Registro IN-OUT}{25}{subsection.3.4.2}
-\contentsline {subsection}{\numberline {3.4.3}Unit\IeC {\`a} di controllo: CU}{26}{subsection.3.4.3}
-\contentsline {subsubsection}{\numberline {3.4.3.1}Segnali interni}{27}{subsubsection.3.4.3.1}
-\contentsline {subsubsection}{\numberline {3.4.3.2}Slave RD$\_$RAM}{28}{subsubsection.3.4.3.2}
-\contentsline {subsubsection}{\numberline {3.4.3.3}Slave JPA}{29}{subsubsection.3.4.3.3}
-\contentsline {subsubsection}{\numberline {3.4.3.4}Slave RD}{30}{subsubsection.3.4.3.4}
-\contentsline {subsubsection}{\numberline {3.4.3.5}Slave WR}{31}{subsubsection.3.4.3.5}
-\contentsline {subsubsection}{\numberline {3.4.3.6}Slave JPO$\_$JBO}{32}{subsubsection.3.4.3.6}
-\contentsline {subsubsection}{\numberline {3.4.3.7}Slave MV}{33}{subsubsection.3.4.3.7}
+\contentsline {subsection}{\numberline {3.1.1}Schema a blocchi}{20}{subsection.3.1.1}
+\contentsline {subsection}{\numberline {3.1.2}Segnali interni}{21}{subsection.3.1.2}
+\contentsline {section}{\numberline {3.2}Ulteriori considerazioni di seconda istanziazione}{21}{section.3.2}
+\contentsline {section}{\numberline {3.3}Dimensionamento interno dei blocchi di seconda istanziazione}{22}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Register bank}{22}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.2}Registro IN-OUT}{25}{subsection.3.3.2}
+\contentsline {subsection}{\numberline {3.3.3}Unit\IeC {\`a} di controllo: CU}{26}{subsection.3.3.3}
+\contentsline {subsubsection}{\numberline {3.3.3.1}Segnali interni}{27}{subsubsection.3.3.3.1}
+\contentsline {subsubsection}{\numberline {3.3.3.2}Slave RD$\_$RAM}{28}{subsubsection.3.3.3.2}
+\contentsline {subsubsection}{\numberline {3.3.3.3}Slave JPA}{29}{subsubsection.3.3.3.3}
+\contentsline {subsubsection}{\numberline {3.3.3.4}Slave RD}{30}{subsubsection.3.3.3.4}
+\contentsline {subsubsection}{\numberline {3.3.3.5}Slave WR}{31}{subsubsection.3.3.3.5}
+\contentsline {subsubsection}{\numberline {3.3.3.6}Slave JPO$\_$JBO}{32}{subsubsection.3.3.3.6}
+\contentsline {subsubsection}{\numberline {3.3.3.7}Slave MV}{33}{subsubsection.3.3.3.7}
+\contentsline {subsubsection}{\numberline {3.3.3.8}ASM MASTER}{34}{subsubsection.3.3.3.8}

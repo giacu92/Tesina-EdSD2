@@ -111,25 +111,119 @@ Si può notare il demultiplexer interno che permette lo smistamento del segnale 
 		\hline
 		\multicolumn{1}{|c|}{0} &
 		\multicolumn{1}{|c|}{0} & 
-		\multicolumn{1}{c|}{lettura LSH}\\
+		\multicolumn{1}{c|}{scrittura LSH}\\
 		
 		\hline
 		\multicolumn{1}{|c|}{0} &
 		\multicolumn{1}{|c|}{1} & 
-		\multicolumn{1}{c|}{lettura MSH}\\
+		\multicolumn{1}{c|}{scrittura MSH}\\
 		
 		\hline
 		\multicolumn{1}{|c|}{1} &
 		\multicolumn{1}{|c|}{0} & 
-		\multicolumn{1}{c|}{scrittura LSH}\\
+		\multicolumn{1}{c|}{lettura LSH}\\
 		
 		\hline
 		\multicolumn{1}{|c|}{1} &
 		\multicolumn{1}{|c|}{1} & 
-		\multicolumn{1}{c|}{scrittura MSH}\\ \hline
+		\multicolumn{1}{c|}{lettura MSH}\\ \hline
 	\end{tabular}
 	\caption{Modalità di funzionamento registro AR0}
 \end{table}
 \noindent
 Omesso dal disegno, ma presente, il clear prioritario dei flip-flop connesso al segnale esterno di \textit{reset}.
+\subsection{Registro IN-OUT}
+Un'importante funzione è delegata al registro bidirezionale D$\_$I/O, ossia quella di pilotare il bus dati in uscita e fungere da pozzo per i dati in ingresso. Il registro deve dunque essere di tipo bidirezionale. Lo schema interno è il seguente.
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.35, angle=0]{2_dio}
+	\label{fig:dio}
+\end{figure}
+\noindent
+Il registro non è dotato di buffer tri-state in ingresso/uscita, dunque sarà necessario fare in modo che questo sia sempre in modalità \textit{inv$\_$dir? = 0} quando non è in utilizzo.
+
 \subsection{Unità di controllo: CU}
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.5, angle=90]{2_cu}
+	\label{fig:cu}
+\end{figure}
+\newpage
+\subsubsection{Segnali interni}
+I segnali interni che trovano posto all'interno dello schema di terza istanziazione della UC sono i seguenti:
+\begin{itemize}
+	\item \textit{str$\_$ir}: strobe per il registro istruzioni IR.
+	\item \textit{\textbf{cmd}}: uscita a 4 bit dell'IR.
+	\item \textit{str$\_$rm1}: strobe per il registro di supporto alla move RM1.
+	\item \textit{str$\_$rm2}: strobe per il registro di supporto alla move RM2.
+	\item \textit{st$\_$nomeslave}: segnale di start per lo slave \textit{nomeslave}. Delega il comando da parte della UC master allo slave \textit{nomeslave} per l'esecuzione del proprio task.
+	\item \textit{nomeslave$\_$eop}: se 1 indica che lo slave \textit{nomeslave} ha terminato l'esecuzione delle proprie operazioni.
+	\item \textit{base}: \{1: indica allo slave JPO/JBO se è richiesta una somma con base (JBO) prelevata dalla memoria; 0: somma JPO semplice\}\item \textit{nomeslave$\_$tr$\_$en}: lo slave \textit{nomeslave} abilita il proprio banco di buffer tri-state per pilotare le linee condivise.
+	\item \textit{en$\_$move}: abilitazione dei tri-state per la logica di move.
+	\item \textit{str$\_$logic}: strobe per il demux di move, esegue la copia del dato sul registro destinazione.
+	\item \textit{str$\_$nomeregistro}: strobe per il registro \textit{nomeregistro}, appartenente al register bank.
+	\item \textit{st$\_$RAM$\_$rdX}: segnale per lo start dello slave RD$\_$RAM. Vi sono 3 segnali provenienti da altrettanti slave che all'occorrenza abilitano RD$\_$RAM. L'abilitazione avviene tramite operazione di OR su questi tre segnali.
+\end{itemize}
+Inoltre, connessi al BUS COMANDI si trovano i segnali di controllo per la RAM:
+\begin{itemize}
+	\item \textit{R/$\overline{W}$}: \{0: abilitata scrittura della memoria RAM interna alla CPU; 1: RAM abilitata alla lettura.\}.
+	\item \textit{strobe}: strobe per la memoria RAM.
+	\item \textit{RAM$\_$data$\_$rd}: \{1: la RAM ha terminato la lettura o e il dato è disponibile sul BUS DATI di sistema; 0: la RAM è in stato \textit{busy}\}.
+\end{itemize}
+
+Passiamo ora a definire i diagrammi ASM per le MSF slave interne alla UC.
+\subsubsection{Slave RD$\_$RAM}
+Esegue la lettura della memoria di un dato indirizzando la RAM tramite il DC. Il diagramma ASM è il seguente.
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.5]{ASM_ram_rd}
+	\label{fig:asm_ram_rd}
+\end{figure}
+
+\newpage
+\subsubsection{Slave JPA}
+Esegue la jump immediata, aggiornando il Program Counter all'indirizzo di salto ricavato dalla memoria.
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.43]{asm_jpa}
+	\label{fig:asm_jpa}
+\end{figure}
+
+\newpage
+\subsubsection{Slave RD}
+Esegue la lettura della memoria all'indirizzo presente in AR0 e salva il dato sul registro D$\_$I/O.
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.55]{asm_rd}
+	\label{fig:asm_rd}
+\end{figure}
+
+\newpage
+\subsubsection{Slave WR}
+Esegue la scrittura del dato presente in D$\_$I/O nella memoria alla locazione imposta dall'indirizzo presente in AR0.
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.55]{asm_wr}
+\label{fig:asm_wr}
+\end{figure}
+
+\newpage
+\subsubsection{Slave JPO$\_$JBO}
+Esegue la jump immediata, salvando il valore ricavato dalla memoria e salvato all'indirizzo AR0 sul Program Counter.
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.55]{ASM_ram_rd}
+	\label{fig:asm_ram_rd}
+\end{figure}
+
+\newpage
+\subsubsection{Slave MV}
+Esegue la jump immediata, salvando il valore ricavato dalla memoria e salvato all'indirizzo AR0 sul Program Counter.
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.55,]{ASM_ram_rd}
+	\label{fig:asm_ram_rd}
+\end{figure}
+
+
+

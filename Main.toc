@@ -22,10 +22,11 @@
 \contentsline {subsection}{\numberline {3.3.2}Registro IN-OUT}{25}{subsection.3.3.2}
 \contentsline {subsection}{\numberline {3.3.3}Unit\IeC {\`a} di controllo: CU}{26}{subsection.3.3.3}
 \contentsline {subsubsection}{\numberline {3.3.3.1}Segnali interni}{27}{subsubsection.3.3.3.1}
-\contentsline {subsubsection}{\numberline {3.3.3.2}Slave RD$\_$RAM}{28}{subsubsection.3.3.3.2}
-\contentsline {subsubsection}{\numberline {3.3.3.3}Slave JPA}{29}{subsubsection.3.3.3.3}
-\contentsline {subsubsection}{\numberline {3.3.3.4}Slave RD}{30}{subsubsection.3.3.3.4}
-\contentsline {subsubsection}{\numberline {3.3.3.5}Slave WR}{31}{subsubsection.3.3.3.5}
-\contentsline {subsubsection}{\numberline {3.3.3.6}Slave JPO$\_$JBO}{32}{subsubsection.3.3.3.6}
-\contentsline {subsubsection}{\numberline {3.3.3.7}Slave MV}{33}{subsubsection.3.3.3.7}
-\contentsline {subsubsection}{\numberline {3.3.3.8}ASM MASTER}{34}{subsubsection.3.3.3.8}
+\contentsline {subsubsection}{\numberline {3.3.3.2}Logica di Move}{28}{subsubsection.3.3.3.2}
+\contentsline {subsubsection}{\numberline {3.3.3.3}Slave RD$\_$RAM}{29}{subsubsection.3.3.3.3}
+\contentsline {subsubsection}{\numberline {3.3.3.4}Slave JPA}{30}{subsubsection.3.3.3.4}
+\contentsline {subsubsection}{\numberline {3.3.3.5}Slave RD}{31}{subsubsection.3.3.3.5}
+\contentsline {subsubsection}{\numberline {3.3.3.6}Slave WR}{32}{subsubsection.3.3.3.6}
+\contentsline {subsubsection}{\numberline {3.3.3.7}Slave JPO$\_$JBO}{33}{subsubsection.3.3.3.7}
+\contentsline {subsubsection}{\numberline {3.3.3.8}Slave MV}{34}{subsubsection.3.3.3.8}
+\contentsline {subsubsection}{\numberline {3.3.3.9}ASM MASTER}{35}{subsubsection.3.3.3.9}

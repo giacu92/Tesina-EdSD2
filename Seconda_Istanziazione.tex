@@ -174,6 +174,77 @@ Inoltre, connessi al BUS COMANDI si trovano i segnali di controllo per la RAM:
 	\item \textit{RAM$\_$data$\_$rd}: \{1: la RAM ha terminato la lettura o e il dato è disponibile sul BUS DATI di sistema; 0: la RAM è in stato \textit{busy}\}.
 \end{itemize}
 
+\subsubsection{Logica di Move}
+Per effettuare l'operazione di move, come detto, si procede dapprima preparando i segnali che permettano lo spostamento del dato da un registro all'altro. Per fare ciò si sintetizza una logica che, a partire dalle etichette contenute in due registri di appoggio scritti a runtime, piloti i segnali da applicare ai registri sorgente e destinazione per permettere la copia del dato.
+Il principio alla base della move è il fatto che tutti i registri condividono sia in lettura sia in scrittura il bus dati interno a N bit. Il bus può essere pilotato da uno dei registri coinvolti nella move (escluso ACC) attraverso l'abilitazione del segnale \textit{$r/\overline{w}\_x$} sul registro $x$. 
+Si possono ora definire le etichette dei registri coinvolti nella move, come riportato nella seguente tabella.
+\begin{table}[H]
+	\centering
+	\fontsize{10}{18}\selectfont
+	\begin{tabular}{|p{25mm}|p{25mm}|p{25mm}|p{25mm}|}
+		\hline
+		\multicolumn{1}{|c|}{\textit{Registro}} &
+		\multicolumn{1}{c|}{\textit{Etichetta}} &
+		\multicolumn{1}{|c|}{\textit{Registro}} &
+		\multicolumn{1}{c|}{\textit{Etichetta}}\\
+		
+		\hline
+		\multicolumn{1}{|c|}{\textbf{DR0}} &
+		\multicolumn{1}{c|}{0000} &
+		\multicolumn{1}{|c|}{\textbf{DRB}} &
+		\multicolumn{1}{c|}{1000}\\
+		
+		\hline
+		\multicolumn{1}{|c|}{\textbf{DR1}} &
+		\multicolumn{1}{c|}{0001} &
+		\multicolumn{1}{|c|}{\textbf{DRO}} &
+		\multicolumn{1}{c|}{1001}\\
+		
+		\hline
+		\multicolumn{1}{|c|}{\textbf{DR2}} &
+		\multicolumn{1}{c|}{0010} &
+		\multicolumn{1}{|c|}{\textbf{AR0}} &
+		\multicolumn{1}{c|}{1010}\\
+		
+		\hline
+		\multicolumn{1}{|c|}{\textbf{DR3}} &
+		\multicolumn{1}{c|}{0011} &
+		\multicolumn{1}{|c|}{\textbf{AR1}} &
+		\multicolumn{1}{c|}{1011}\\
+		
+		\hline
+		\multicolumn{1}{|c|}{\textbf{DR4}} &
+		\multicolumn{1}{c|}{0100} &
+		\multicolumn{1}{|c|}{\textbf{AR2}} &
+		\multicolumn{1}{c|}{1100}\\
+		
+		\hline
+		\multicolumn{1}{|c|}{\textbf{DR5}} &
+		\multicolumn{1}{c|}{0101} &
+		\multicolumn{1}{|c|}{\textbf{AR3}} &
+		\multicolumn{1}{c|}{1101}\\
+		
+		\hline
+		\multicolumn{1}{|c|}{\textbf{DR6}} &
+		\multicolumn{1}{c|}{0110} &
+		\multicolumn{1}{|c|}{\textbf{ACC}} &
+		\multicolumn{1}{c|}{1110}\\
+		
+		\hline
+		\multicolumn{1}{|c|}{\textbf{DR7}} &
+		\multicolumn{1}{c|}{0111} &
+		\multicolumn{1}{|c|}{\textbf{D$\_$I/O}} &
+		\multicolumn{1}{c|}{1111}\\
+		
+		\hline
+	\end{tabular}
+	\caption{Etichette dei registri abilitati all'operazione di move}
+\end{table}
+\noindent
+Tali etichette possono essere definite a livello di Instruction Set, permettendo all'utente la scrittura dei registri utilizzando direttamente il nominativo nella stesura del codice assembler; es: \textit{MV DR3, ACC}.\\
+La logica che pilota i segnali è di tipo combinatorio e verifica la seguente tabella di verità.
+
+\par \bigskip \noindent
 Passiamo ora a definire i diagrammi ASM per le MSF slave interne alla UC.
 \subsubsection{Slave RD$\_$RAM}
 Esegue la lettura della memoria di un dato indirizzando la RAM tramite il DC. Il diagramma ASM è il seguente.
@@ -256,7 +327,7 @@ EXECUTE (WRITE-BACK):
 Da cui il diagramma ASM per la macchina MASTER.
 \begin{figure}[H]
 	\centering
-	\includegraphics[scale=0.30, angle=90]{asm_master}
+	\includegraphics[scale=0.35, angle=90]{asm_master}
 	\label{fig:asm_master}
 \end{figure}
 

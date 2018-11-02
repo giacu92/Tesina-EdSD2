@@ -20,10 +20,11 @@
 \BOOKMARK [2][-]{subsection.3.3.2}{Registro IN-OUT}{section.3.3}% 20
 \BOOKMARK [2][-]{subsection.3.3.3}{Unit\340 di controllo: CU}{section.3.3}% 21
 \BOOKMARK [3][-]{subsubsection.3.3.3.1}{Segnali interni}{subsection.3.3.3}% 22
-\BOOKMARK [3][-]{subsubsection.3.3.3.2}{Slave RD\137RAM}{subsection.3.3.3}% 23
-\BOOKMARK [3][-]{subsubsection.3.3.3.3}{Slave JPA}{subsection.3.3.3}% 24
-\BOOKMARK [3][-]{subsubsection.3.3.3.4}{Slave RD}{subsection.3.3.3}% 25
-\BOOKMARK [3][-]{subsubsection.3.3.3.5}{Slave WR}{subsection.3.3.3}% 26
-\BOOKMARK [3][-]{subsubsection.3.3.3.6}{Slave JPO\137JBO}{subsection.3.3.3}% 27
-\BOOKMARK [3][-]{subsubsection.3.3.3.7}{Slave MV}{subsection.3.3.3}% 28
-\BOOKMARK [3][-]{subsubsection.3.3.3.8}{ASM MASTER}{subsection.3.3.3}% 29
+\BOOKMARK [3][-]{subsubsection.3.3.3.2}{Logica di Move}{subsection.3.3.3}% 23
+\BOOKMARK [3][-]{subsubsection.3.3.3.3}{Slave RD\137RAM}{subsection.3.3.3}% 24
+\BOOKMARK [3][-]{subsubsection.3.3.3.4}{Slave JPA}{subsection.3.3.3}% 25
+\BOOKMARK [3][-]{subsubsection.3.3.3.5}{Slave RD}{subsection.3.3.3}% 26
+\BOOKMARK [3][-]{subsubsection.3.3.3.6}{Slave WR}{subsection.3.3.3}% 27
+\BOOKMARK [3][-]{subsubsection.3.3.3.7}{Slave JPO\137JBO}{subsection.3.3.3}% 28
+\BOOKMARK [3][-]{subsubsection.3.3.3.8}{Slave MV}{subsection.3.3.3}% 29
+\BOOKMARK [3][-]{subsubsection.3.3.3.9}{ASM MASTER}{subsection.3.3.3}% 30

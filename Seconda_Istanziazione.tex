@@ -243,9 +243,120 @@ Si possono ora definire le etichette dei registri coinvolti nella move, come rip
 \noindent
 Tali etichette possono essere definite a livello di Instruction Set, permettendo all'utente la scrittura dei registri utilizzando direttamente il nominativo nella stesura del codice assembler; es: \textit{MV DR3, ACC}.\\
 La logica che pilota i segnali è di tipo combinatorio e verifica la seguente tabella di verità.
-
+\begin{table}[H]
+	\centering
+	\fontsize{10}{18}\selectfont
+	\begin{tabular}{|p{25mm}|p{5mm}|p{5mm}|p{25mm}|}
+		\hline
+		\multicolumn{1}{|c|}{\textbf{Registro sorgente}} &
+		\multicolumn{1}{c|}{\textit{invDir?}} &
+		\multicolumn{1}{|c|}{\textit{M/$\overline{L}$}} &
+		\multicolumn{1}{c|}{\textit{R/$\overline{W}$}}\\
+		
+		\hline
+		\multicolumn{1}{|c|}{\textbf{DR0}} &
+		\multicolumn{1}{c|}{-} &
+		\multicolumn{1}{|c|}{-} &
+		\multicolumn{1}{c|}{DR0}\\
+		
+		\hline
+		\multicolumn{1}{|c|}{\textbf{DR1}} &
+		\multicolumn{1}{c|}{-} &
+		\multicolumn{1}{|c|}{-} &
+		\multicolumn{1}{c|}{DR1}\\
+		
+		\hline
+		\multicolumn{1}{|c|}{\textbf{DR2}} &
+		\multicolumn{1}{c|}{-} &
+		\multicolumn{1}{|c|}{-} &
+		\multicolumn{1}{c|}{DR2}\\
+		
+		\hline
+		\multicolumn{1}{|c|}{\textbf{DR3}} &
+		\multicolumn{1}{c|}{-} &
+		\multicolumn{1}{|c|}{-} &
+		\multicolumn{1}{c|}{DR3}\\
+		
+		\hline
+		\multicolumn{1}{|c|}{\textbf{DR4}} &
+		\multicolumn{1}{c|}{-} &
+		\multicolumn{1}{|c|}{-} &
+		\multicolumn{1}{c|}{DR4}\\
+		
+		\hline
+		\multicolumn{1}{|c|}{\textbf{DR5}} &
+		\multicolumn{1}{c|}{-} &
+		\multicolumn{1}{|c|}{-} &
+		\multicolumn{1}{c|}{DR5}\\
+		
+		\hline
+		\multicolumn{1}{|c|}{\textbf{DR6}} &
+		\multicolumn{1}{c|}{-} &
+		\multicolumn{1}{|c|}{-} &
+		\multicolumn{1}{c|}{DR6}\\
+		
+		\hline
+		\multicolumn{1}{|c|}{\textbf{DR7}} &
+		\multicolumn{1}{c|}{-} &
+		\multicolumn{1}{|c|}{-} &
+		\multicolumn{1}{c|}{DR7}\\
+		
+		\hline
+		\multicolumn{1}{|c|}{\textbf{DRB}} &
+		\multicolumn{1}{c|}{-} &
+		\multicolumn{1}{|c|}{-} &
+		\multicolumn{1}{c|}{DRB}\\
+		
+		\hline
+		\multicolumn{1}{|c|}{\textbf{DRO}} &
+		\multicolumn{1}{c|}{-} &
+		\multicolumn{1}{|c|}{-} &
+		\multicolumn{1}{c|}{DRO}\\
+		
+		\hline
+		\multicolumn{1}{|c|}{\textbf{AR0}} &
+		\multicolumn{1}{c|}{-} &
+		\multicolumn{1}{|c|}{0} &
+		\multicolumn{1}{c|}{AR0}\\
+		
+		\hline
+		\multicolumn{1}{|c|}{\textbf{AR1}} &
+		\multicolumn{1}{c|}{-} &
+		\multicolumn{1}{|c|}{-} &
+		\multicolumn{1}{c|}{AR1}\\
+		
+		\hline
+		\multicolumn{1}{|c|}{\textbf{AR2}} &
+		\multicolumn{1}{c|}{-} &
+		\multicolumn{1}{|c|}{-} &
+		\multicolumn{1}{c|}{AR2}\\
+		
+		\hline
+		\multicolumn{1}{|c|}{\textbf{AR3}} &
+		\multicolumn{1}{c|}{-} &
+		\multicolumn{1}{|c|}{-} &
+		\multicolumn{1}{c|}{AR3}\\
+		
+		\hline
+		\multicolumn{1}{|c|}{\textbf{ACC}} &
+		\multicolumn{1}{c|}{-} &
+		\multicolumn{1}{|c|}{-} &
+		\multicolumn{1}{c|}{-}\\
+		
+		\hline
+		\multicolumn{1}{|c|}{\textbf{D$\_$I/O}} &
+		\multicolumn{1}{c|}{0} &
+		\multicolumn{1}{|c|}{-} &
+		\multicolumn{1}{c|}{-}\\
+		\hline
+	\end{tabular}
+\end{table}
+\noindent
+La lettura della tabella avviene come segue: per ogni registro scelto i segnali da abilitare sono quelli aventi un valore valido nella tabella.\\
+Per esempio, per usare il registro \textbf{AR0} come sorgente la logica deve generare i segnali \textit{M/$\overline{L}$ = 0} e \textit{R/$\overline{W}\_$AR0 = 1} ponendo tutti gli altri a 0, mentre se si scegliesse \textbf{D$\_$I/O} la logica genererebbe solamente \textit{invDir? = 0}. Le uscite sono dunque 16 e sono abilitate tramite buffer tri-state da parte di un segnale di controllo \textit{enMOVE}.
 \par \bigskip \noindent
 Passiamo ora a definire i diagrammi ASM per le MSF slave interne alla UC.
+\newpage
 \subsubsection{Slave RD$\_$RAM}
 Esegue la lettura della memoria di un dato indirizzando la RAM tramite il DC. Il diagramma ASM è il seguente.
 \begin{figure}[H]

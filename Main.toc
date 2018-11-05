@@ -30,3 +30,4 @@
 \contentsline {subsubsection}{\numberline {3.3.3.7}Slave JPO$\_$JBO}{34}{subsubsection.3.3.3.7}
 \contentsline {subsubsection}{\numberline {3.3.3.8}Slave MV}{35}{subsubsection.3.3.3.8}
 \contentsline {subsubsection}{\numberline {3.3.3.9}ASM MASTER}{36}{subsubsection.3.3.3.9}
+\contentsline {chapter}{\numberline {4}Sintesi in VHDL}{38}{chapter.4}

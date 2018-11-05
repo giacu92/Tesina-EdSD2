@@ -350,10 +350,11 @@ La logica che pilota i segnali è di tipo combinatorio e verifica la seguente ta
 		\multicolumn{1}{c|}{-}\\
 		\hline
 	\end{tabular}
+	\caption{Tabella di verità per la sintesi della logica di move}
 \end{table}
 \noindent
 La lettura della tabella avviene come segue: per ogni registro scelto i segnali da abilitare sono quelli aventi un valore valido nella tabella.\\
-Per esempio, per usare il registro \textbf{AR0} come sorgente la logica deve generare i segnali \textit{M/$\overline{L}$ = 0} e \textit{R/$\overline{W}\_$AR0 = 1} ponendo tutti gli altri a 0, mentre se si scegliesse \textbf{D$\_$I/O} la logica genererebbe solamente \textit{invDir? = 0}. Le uscite sono dunque 16 e sono abilitate tramite buffer tri-state da parte di un segnale di controllo \textit{enMOVE}.
+Per esempio, per usare il registro \textbf{AR0} come sorgente la logica deve generare i segnali \textit{M/$\overline{L}$ = 0} e \textit{R/$\overline{W}\_$AR0 = 1} ponendo tutti gli altri a 0, mentre se si scegliesse \textbf{D$\_$I/O} la logica genererebbe solamente \textit{inv$\_$dir? = 0}. Le uscite sono dunque 16 e sono abilitate tramite buffer tri-state da parte di un segnale di controllo \textit{en$\_$move}.
 \par \bigskip \noindent
 Passiamo ora a definire i diagrammi ASM per le MSF slave interne alla UC.
 \newpage

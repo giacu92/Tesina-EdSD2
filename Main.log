@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.5.3)  5 NOV 2018 18:12
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.5.3)  5 NOV 2018 23:12
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -785,7 +785,7 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 7.
 (/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-<FIGS/logo_univ.png, id=123, 290.08376pt x 361.35pt>
+<FIGS/logo_univ.png, id=127, 290.08376pt x 361.35pt>
 File: FIGS/logo_univ.png Graphic file (type png)
  <use FIGS/logo_univ.png>
 Package pdftex.def Info: FIGS/logo_univ.png used on input line 8.
@@ -795,7 +795,7 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
 LaTeX Font Info:    Font shape `OT1/ptm/bx/sc' in size <12> not available
 (Font)              Font shape `OT1/ptm/b/sc' tried instead on input line 16.
 
-<FIGS/logo_ing.png, id=125, 203.76125pt x 192.72pt>
+<FIGS/logo_ing.png, id=129, 203.76125pt x 192.72pt>
 File: FIGS/logo_ing.png Graphic file (type png)
  <use FIGS/logo_ing.png>
 Package pdftex.def Info: FIGS/logo_ing.png used on input line 18.
@@ -840,7 +840,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 3--6
 
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <17.28> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 7.
-<FIGS/0_von_neumann.png, id=173, 604.2575pt x 489.83pt>
+<FIGS/0_von_neumann.png, id=178, 604.2575pt x 489.83pt>
 File: FIGS/0_von_neumann.png Graphic file (type png)
 
 <use FIGS/0_von_neumann.png>
@@ -857,7 +857,7 @@ File: omsptm.fd
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <12> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 24.
  [3 <./FIGS/0_von_neumann.png>] [4]
-<FIGS/0_4004_instruction_set.png, id=190, 506.89375pt x 679.53876pt>
+<FIGS/0_4004_instruction_set.png, id=195, 506.89375pt x 679.53876pt>
 File: FIGS/0_4004_instruction_set.png Graphic file (type png)
 
 <use FIGS/0_4004_instruction_set.png>
@@ -870,21 +870,21 @@ LaTeX Font Info:    Try loading font information for OT1+pcr on input line 46.
 (/usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 )
-<FIGS/0_vn_cpu.png, id=198, 323.2075pt x 452.69125pt>
+<FIGS/0_vn_cpu.png, id=203, 323.2075pt x 452.69125pt>
 File: FIGS/0_vn_cpu.png Graphic file (type png)
  <use FIGS/0_vn_cpu.png>
 Package pdftex.def Info: FIGS/0_vn_cpu.png used on input line 79.
 (pdftex.def)             Requested size: 161.60335pt x 226.34506pt.
 
 [6] [7 <./FIGS/0_vn_cpu.png>]
-<FIGS/0_memoria_separata.png, id=216, 345.29pt x 528.97626pt>
+<FIGS/0_memoria_separata.png, id=221, 345.29pt x 528.97626pt>
 File: FIGS/0_memoria_separata.png Graphic file (type png)
 
 <use FIGS/0_memoria_separata.png>
 Package pdftex.def Info: FIGS/0_memoria_separata.png used on input line 102.
 (pdftex.def)             Requested size: 138.11354pt x 211.58675pt.
  [8] [9 <./FIGS/0_memoria_separata.png>]
-[10] <FIGS/0_ist_zero.png, id=237, 1063.975pt x 609.27625pt>
+[10] <FIGS/0_ist_zero.png, id=242, 1063.975pt x 609.27625pt>
 File: FIGS/0_ist_zero.png Graphic file (type png)
 
 <use FIGS/0_ist_zero.png>
@@ -898,7 +898,7 @@ Overfull \hbox (4.35025pt too wide) in paragraph at lines 2--2
 []\OT1/ptm/b/n/17.28 Schema a bloc-chi e de-fi-ni-zio-ne dei se-gna-li IN/OUT 
  []
 
-<FIGS/1_prima_istanziazione.png, id=249, 709.65125pt x 310.15875pt>
+<FIGS/1_prima_istanziazione.png, id=254, 709.65125pt x 310.15875pt>
 File: FIGS/1_prima_istanziazione.png Graphic file (type png)
 
 <use FIGS/1_prima_istanziazione.png>
@@ -917,7 +917,7 @@ Overfull \hbox (4.35025pt too wide) in paragraph at lines 2--2
 []\OT1/ptm/b/n/17.28 Schema a bloc-chi e de-fi-ni-zio-ne dei se-gna-li IN/OUT 
  []
 
-<FIGS/2_seconda_istanziazione.png, id=288, 995.72pt x 642.4pt>
+<FIGS/2_seconda_istanziazione.png, id=293, 995.72pt x 642.4pt>
 File: FIGS/2_seconda_istanziazione.png Graphic file (type png)
 
 <use FIGS/2_seconda_istanziazione.png>
@@ -929,7 +929,7 @@ Package pdftex.def Info: FIGS/2_seconda_istanziazione.png used on input line 8.
 ] [20 <./FIGS/2_seconda_istanziazione.png>]
 LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <12> not available
 (Font)              Font shape `OT1/ptm/b/it' tried instead on input line 26.
- [21] <FIGS/2_register_bank.png, id=307, 1161.33875pt x 523.9575pt>
+ [21] <FIGS/2_register_bank.png, id=312, 1161.33875pt x 523.9575pt>
 File: FIGS/2_register_bank.png Graphic file (type png)
 
 <use FIGS/2_register_bank.png>
@@ -941,31 +941,31 @@ Overfull \hbox (8.13608pt too wide) in paragraph at lines 75--77
  []
 
 [22 <./FIGS/2_register_bank.png>]
-<FIGS/2_registro_bidir.png, id=314, 1173.38374pt x 504.88625pt>
+<FIGS/2_registro_bidir.png, id=319, 1173.38374pt x 504.88625pt>
 File: FIGS/2_registro_bidir.png Graphic file (type png)
 
 <use FIGS/2_registro_bidir.png>
 Package pdftex.def Info: FIGS/2_registro_bidir.png used on input line 89.
 (pdftex.def)             Requested size: 375.49046pt x 161.5669pt.
  [23]
-<FIGS/2_AR0.png, id=320, 1198.4775pt x 435.6275pt>
+<FIGS/2_AR0.png, id=325, 1198.4775pt x 435.6275pt>
 File: FIGS/2_AR0.png Graphic file (type png)
  <use FIGS/2_AR0.png>
 Package pdftex.def Info: FIGS/2_AR0.png used on input line 99.
 (pdftex.def)             Requested size: 383.52063pt x 139.40364pt.
 
 [24 <./FIGS/2_registro_bidir.png> <./FIGS/2_AR0.png>]
-<FIGS/2_dio.png, id=329, 1069.9975pt x 583.17876pt>
+<FIGS/2_dio.png, id=334, 1069.9975pt x 583.17876pt>
 File: FIGS/2_dio.png Graphic file (type png)
  <use FIGS/2_dio.png>
 Package pdftex.def Info: FIGS/2_dio.png used on input line 141.
 (pdftex.def)             Requested size: 374.50473pt x 204.11562pt.
 
-<FIGS/2_cu.png, id=330, 1184.425pt x 645.41125pt>
+<FIGS/2_cu.png, id=335, 1184.425pt x 648.4225pt>
 File: FIGS/2_cu.png Graphic file (type png)
  <use FIGS/2_cu.png>
 Package pdftex.def Info: FIGS/2_cu.png used on input line 150.
-(pdftex.def)             Requested size: 556.67984pt x 303.34334pt.
+(pdftex.def)             Requested size: 556.67984pt x 304.7586pt.
  [25 <./FIGS/2_dio.png>] [26 <./FIGS/2_cu.png>] [27]
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 236.
@@ -973,91 +973,91 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 236.
  [28]
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 356.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 357.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 356.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 357.
  [29]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 360.
+(hyperref)                removing `math shift' on input line 361.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 360.
+(hyperref)                removing `math shift' on input line 361.
 
-<FIGS/ASM_ram_rd.png, id=359, 732.48656pt x 830.35219pt>
+<FIGS/ASM_ram_rd.png, id=364, 732.48656pt x 830.35219pt>
 File: FIGS/ASM_ram_rd.png Graphic file (type png)
 
 <use FIGS/ASM_ram_rd.png>
-Package pdftex.def Info: FIGS/ASM_ram_rd.png used on input line 364.
+Package pdftex.def Info: FIGS/ASM_ram_rd.png used on input line 365.
 (pdftex.def)             Requested size: 366.24237pt x 415.17508pt.
  [30 <./FIGS/ASM_ram_rd.png>]
-<FIGS/asm_jpa.png, id=366, 908.64468pt x 1188.69093pt>
+<FIGS/asm_jpa.png, id=371, 908.64468pt x 1188.69093pt>
 File: FIGS/asm_jpa.png Graphic file (type png)
  <use FIGS/asm_jpa.png>
-Package pdftex.def Info: FIGS/asm_jpa.png used on input line 373.
+Package pdftex.def Info: FIGS/asm_jpa.png used on input line 374.
 (pdftex.def)             Requested size: 390.7096pt x 511.12714pt.
 
-[31 <./FIGS/asm_jpa.png>] <FIGS/asm_rd.png, id=373, 727.96968pt x 910.15031pt>
+[31 <./FIGS/asm_jpa.png>] <FIGS/asm_rd.png, id=378, 727.96968pt x 910.15031pt>
 File: FIGS/asm_rd.png Graphic file (type png)
 
 <use FIGS/asm_rd.png>
-Package pdftex.def Info: FIGS/asm_rd.png used on input line 382.
+Package pdftex.def Info: FIGS/asm_rd.png used on input line 383.
 (pdftex.def)             Requested size: 400.38457pt x 500.58423pt.
 
-Overfull \hbox (2.04599pt too wide) in paragraph at lines 382--384
+Overfull \hbox (2.04599pt too wide) in paragraph at lines 383--385
  [][] 
  []
 
-[32 <./FIGS/asm_rd.png>] <FIGS/asm_wr.png, id=380, 727.96968pt x 742.27313pt>
+[32 <./FIGS/asm_rd.png>] <FIGS/asm_wr.png, id=385, 727.96968pt x 742.27313pt>
 File: FIGS/asm_wr.png Graphic file (type png)
 
 <use FIGS/asm_wr.png>
-Package pdftex.def Info: FIGS/asm_wr.png used on input line 391.
+Package pdftex.def Info: FIGS/asm_wr.png used on input line 392.
 (pdftex.def)             Requested size: 400.38457pt x 408.2515pt.
 
-Overfull \hbox (2.04599pt too wide) in paragraph at lines 391--393
+Overfull \hbox (2.04599pt too wide) in paragraph at lines 392--394
  [][] 
  []
 
 [33 <./FIGS/asm_wr.png>]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 396.
+(hyperref)                removing `math shift' on input line 397.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 396.
+(hyperref)                removing `math shift' on input line 397.
 
-<FIGS/asm_jp.png, id=387, 1010.27437pt x 1236.87094pt>
+<FIGS/asm_jp.png, id=392, 1010.27437pt x 1236.87094pt>
 File: FIGS/asm_jp.png Graphic file (type png)
  <use FIGS/asm_jp.png>
-Package pdftex.def Info: FIGS/asm_jp.png used on input line 400.
+Package pdftex.def Info: FIGS/asm_jp.png used on input line 401.
 (pdftex.def)             Requested size: 404.10258pt x 494.73962pt.
 
-Overfull \hbox (5.764pt too wide) in paragraph at lines 400--402
+Overfull \hbox (5.764pt too wide) in paragraph at lines 401--403
  [][] 
  []
 
-[34 <./FIGS/asm_jp.png>] <FIGS/asm_mv.png, id=394, 901.86937pt x 1188.69093pt>
+[34 <./FIGS/asm_jp.png>] <FIGS/asm_mv.png, id=399, 901.86937pt x 1188.69093pt>
 File: FIGS/asm_mv.png Graphic file (type png)
 
 <use FIGS/asm_mv.png>
-Package pdftex.def Info: FIGS/asm_mv.png used on input line 409.
+Package pdftex.def Info: FIGS/asm_mv.png used on input line 410.
 (pdftex.def)             Requested size: 387.79626pt x 511.12714pt.
  [35 <./FIGS/asm_mv.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 415--416
+Underfull \hbox (badness 10000) in paragraph at lines 416--417
 
  []
 
-<FIGS/asm_master.png, id=402, 1738.99687pt x 1165.35374pt>
+<FIGS/asm_master.png, id=407, 1738.99687pt x 1165.35374pt>
 File: FIGS/asm_master.png Graphic file (type png)
 
 <use FIGS/asm_master.png>
-Package pdftex.def Info: FIGS/asm_master.png used on input line 441.
+Package pdftex.def Info: FIGS/asm_master.png used on input line 442.
 (pdftex.def)             Requested size: 608.65804pt x 407.87993pt.
 
-Overfull \hbox (9.54135pt too wide) in paragraph at lines 441--443
+Overfull \hbox (9.54135pt too wide) in paragraph at lines 442--444
  [][] 
  []
 
@@ -1065,21 +1065,26 @@ Overfull \hbox (9.54135pt too wide) in paragraph at lines 441--443
 Overfull \vbox (27.68015pt too high) has occurred while \output is active []
 
 
-[37 <./FIGS/asm_master.png>])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 244.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 244.
+[37 <./FIGS/asm_master.png>]) (./Sintesi_in_VHDL.tex
+Capitolo 4.
+)
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 245.
+ [38
+
+]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 245.
  (./Main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 244.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 244.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 245.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 245.
 Package rerunfilecheck Info: File `Main.out' has not changed.
-(rerunfilecheck)             Checksum: D38895CAF0773FF32D97FC29D0B48CD6;2224.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 244.
+(rerunfilecheck)             Checksum: 3010B79FC43D006BA2B593156629143C;2275.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 245.
  ) 
 Here is how much of TeX's memory you used:
- 10537 strings out of 493014
- 150927 string characters out of 6133352
+ 10543 strings out of 493014
+ 151009 string characters out of 6133352
  281244 words of memory out of 5000000
- 13766 multiletter control sequences out of 15000+600000
+ 13767 multiletter control sequences out of 15000+600000
  38754 words of font info for 82 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  44i,14n,43p,1020b,1054s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1096,10 +1101,10 @@ t/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/ty
 pe1/urw/times/utmbi8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/t
 imes/utmr8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/times/utmri
 8a.pfb>
-Output written on Main.pdf (39 pages, 1093273 bytes).
+Output written on Main.pdf (40 pages, 1097757 bytes).
 PDF statistics:
- 488 PDF objects out of 1000 (max. 8388607)
- 389 compressed objects within 4 object streams
- 111 named destinations out of 1000 (max. 500000)
- 346 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 497 PDF objects out of 1000 (max. 8388607)
+ 397 compressed objects within 4 object streams
+ 113 named destinations out of 1000 (max. 500000)
+ 354 words of extra memory for PDF output out of 10000 (max. 10000000)
 

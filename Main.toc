@@ -5,7 +5,7 @@
 \contentsline {section}{Logica Programmata}{2}{section*.2}
 \contentsline {subsection}{Esecuzione delle istruzioni}{6}{section*.5}
 \contentsline {subsection}{Von Neumann migliorato}{8}{section*.8}
-\contentsline {section}{Medoti di indirizzamento}{10}{section*.10}
+\contentsline {section}{Metodi di indirizzamento}{10}{section*.10}
 \contentsline {section}{Istanziazione zero}{11}{section*.11}
 \contentsline {chapter}{\numberline {2}Prima istanziazione}{13}{chapter.2}
 \contentsline {section}{\numberline {2.1}Schema a blocchi e definizione dei segnali IN/OUT}{13}{section.2.1}

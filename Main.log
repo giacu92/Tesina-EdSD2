@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.5.3)  5 NOV 2018 23:12
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.5.3)  5 NOV 2018 23:18
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1076,8 +1076,15 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 245.
  (./Main.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 245.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 245.
-Package rerunfilecheck Info: File `Main.out' has not changed.
-(rerunfilecheck)             Checksum: 3010B79FC43D006BA2B593156629143C;2275.
+
+
+Package rerunfilecheck Warning: File `Main.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `Main.out':
+(rerunfilecheck)             Before: 3010B79FC43D006BA2B593156629143C;2275
+(rerunfilecheck)             After:  87E771A182236117779042A816666B31;2275.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 245.
  ) 
 Here is how much of TeX's memory you used:

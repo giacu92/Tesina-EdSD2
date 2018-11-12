@@ -3,6 +3,7 @@
 A partire da quanto esposto nel precedente capitolo segue lo schema di seconda istanziazione della CPU.
 %\newpage
 \subsection{Schema a blocchi}
+\label{seconda_ist}
 \begin{figure}[H]
 	\centering
 	\includegraphics[scale=0.56, angle=90]{2_seconda_istanziazione}
@@ -66,7 +67,7 @@ Per ciò che concerne l'indirizzamento della memoria si può notare che il regis
 	\label{2_tabella_SEL}
 \end{table}
 \noindent
-Questo perché, come detto, è necessario avere tre possibili sorgenti per l'indirizzamento della memoria. Il valore di indirizzamento proviene da PC, DC oppure da AR0, nei casi in cui $SEL_1$ = 1. AR0 è uno dei tre registri presenti nel banco d'appoggio con \textquotedblleft funzione speciale", ossia connesso ad un bus esterno accessibile in modo prioritario, proprio per avere la possibilità di realizzare funzioni come l'indirizzamento della memoria o il caricamento del valore del salto nel caso della jump.
+Questo perché, come detto, è necessario avere tre possibili sorgenti per l'indirizzamento della memoria. Il valore di indirizzamento proviene da PC, DC oppure da AR0, nei casi in cui $SEL_1$ = 1. AR0 è uno dei tre registri presenti nel banco d'appoggio con \textquotedblleft funzione speciale", ossia connesso ad un bus esterno accessibile in modo prioritario, proprio per avere la possibilità di realizzare funzioni come l'indirizzamento della memoria o il caricamento del valore del salto nel caso della JUMP.
 
 \section{Dimensionamento interno dei blocchi di seconda istanziazione}
 \subsection{Register bank}
@@ -79,7 +80,7 @@ Il register bank contiene 14 registri di supporto al calcolo, di cui 4 riservati
 \begin{itemize}
 	\item DRB: nel caso dell'operazione JBO in questo registro è presente il valore relativo alla base da sommare all'offset per il calcolo dell'indirizzo di salto.
 	\item DRO: nel caso delle operazioni di JPO o JBO in questo registro è presente il valore relativo all'offset da sommare al PC o alla base per il calcolo dell'indirizzo di salto.
-	\item AR0: in questo registo è presente il valore da dare al PC nel caso di jump immediata, oppure il valore da fornire alla memoria nel caso di RD o WR. Questo registro ha dimensione 2N bit per garantire l'indirizzamento a tutta la memoria, tuttavia è collegato attraverso il bus dati interno solo agli ultimi N bit. Attraverso il comando denominato $M/\overline{L}$ indirizzare il bus dati in scrittura ai primi N flip-flop o agli ultimi N flip-flop che compongono tale registro, per garantire il caricamento su tutto lo spazio dei 2N bit tramite bus a N bit. Di seguito sarà presentato lo schema interno-
+	\item AR0: in questo registo è presente il valore da dare al PC nel caso di JUMP immediata, oppure il valore da fornire alla memoria nel caso di RD o WR. Questo registro ha dimensione 2N bit per garantire l'indirizzamento a tutta la memoria, tuttavia è collegato attraverso il bus dati interno solo agli ultimi N bit. Attraverso il comando denominato $M/\overline{L}$ indirizzare il bus dati in scrittura ai primi N flip-flop o agli ultimi N flip-flop che compongono tale registro, per garantire il caricamento su tutto lo spazio dei 2N bit tramite bus a N bit. Di seguito sarà presentato lo schema interno-
 \end{itemize}
 Ogni registro componente il register bank è pilotato singolarmente attraverso una terna di segnali: \{\textit{str\_xxx}, \textit{rst}, \textit{r/$\overline{w}$\_xxx}\}. Nel caso del registro AR0 è presente anche il segnale $M/\overline{L}$ il cui impiego è necessario per avere la possibilità di scrivere o leggere separatemente i LSH (Least Significant Heap) o gli MSH (Most Significant Heap), ossia gli ultimi/primi N bit del registro. Dettagli del funzionamento del registro AR0 saranno esposti in seguito.\\
 L'insieme dei segnali di controllo è stato schematizzato nella figura con l'insieme di linee denominato \textit{\textbf{register\_bank\_command\_lines}}.\\
@@ -157,13 +158,13 @@ I segnali interni che trovano posto all'interno dello schema di terza istanziazi
 	\item \textit{rst}: \{0: funzionamento normale; 1: reset prioritario per tutti i registri\}.
 	\item \textit{str$\_$ir}: strobe per il registro istruzioni IR.
 	\item \textit{\textbf{cmd}}: uscita a 4 bit dell'IR.
-	\item \textit{str$\_$rm1}: strobe per il registro di supporto alla move RM1.
-	\item \textit{str$\_$rm2}: strobe per il registro di supporto alla move RM2.
+	\item \textit{str$\_$rm1}: strobe per il registro di supporto alla MOVE RM1.
+	\item \textit{str$\_$rm2}: strobe per il registro di supporto alla MOVERM2.
 	\item \textit{st$\_$nomeslave}: segnale di start per lo slave \textit{nomeslave}. Delega il comando da parte della UC master allo slave \textit{nomeslave} per l'esecuzione del proprio task.
 	\item \textit{nomeslave$\_$eop}: se 1 indica che lo slave \textit{nomeslave} ha terminato l'esecuzione delle proprie operazioni.
 	\item \textit{base}: \{1: indica allo slave JPO/JBO se è richiesta una somma con base (JBO) prelevata dalla memoria; 0: somma JPO semplice\}\item \textit{nomeslave$\_$tr$\_$en}: lo slave \textit{nomeslave} abilita il proprio banco di buffer tri-state per pilotare le linee condivise.
-	\item \textit{en$\_$move}: abilitazione dei tri-state per la logica di move.
-	\item \textit{str$\_$logic}: strobe per il demux di move, esegue la copia del dato sul registro destinazione.
+	\item \textit{en$\_$move}: abilitazione dei tri-state per la logica di MOVE.
+	\item \textit{str$\_$logic}: strobe per il demux di MOVE, esegue la copia del dato sul registro destinazione.
 	\item \textit{str$\_$nomeregistro}: strobe per il registro \textit{nomeregistro}, appartenente al register bank.
 	\item \textit{st$\_$RAM$\_$rdX}: segnale per lo start dello slave RD$\_$RAM. Vi sono 3 segnali provenienti da altrettanti slave che all'occorrenza abilitano RD$\_$RAM. L'abilitazione avviene tramite operazione di OR su questi tre segnali.
 \end{itemize}
@@ -174,10 +175,10 @@ Inoltre, connessi al BUS COMANDI si trovano i segnali di controllo per la RAM:
 	\item \textit{RAM$\_$data$\_$rd}: \{1: la RAM ha terminato la lettura o e il dato è disponibile sul BUS DATI di sistema; 0: la RAM è in stato \textit{busy}\}.
 \end{itemize}
 
-\subsubsection{Logica di Move}
-Per effettuare l'operazione di move, come detto, si procede dapprima preparando i segnali che permettano lo spostamento del dato da un registro all'altro. Per fare ciò si sintetizza una logica che, a partire dalle etichette contenute in due registri di appoggio scritti a runtime, piloti i segnali da applicare ai registri sorgente e destinazione per permettere la copia del dato.
-Il principio alla base della move è il fatto che tutti i registri condividono sia in lettura sia in scrittura il bus dati interno a N bit. Il bus può essere pilotato da uno dei registri coinvolti nella move (escluso ACC) attraverso l'abilitazione del segnale \textit{$r/\overline{w}\_x$} sul registro $x$. 
-Si possono ora definire le etichette dei registri coinvolti nella move, come riportato nella seguente tabella.
+\subsubsection{Logica di MOVE}
+Per effettuare l'operazione di MOVE, come detto, si procede dapprima preparando i segnali che permettano lo spostamento del dato da un registro all'altro. Per fare ciò si sintetizza una logica che, a partire dalle etichette contenute in due registri di appoggio scritti a runtime, piloti i segnali da applicare ai registri sorgente e destinazione per permettere la copia del dato.
+Il principio alla base della MOVE è il fatto che tutti i registri condividono sia in lettura sia in scrittura il bus dati interno a N bit. Il bus può essere pilotato da uno dei registri coinvolti nella MOVE (escluso ACC) attraverso l'abilitazione del segnale \textit{$r/\overline{w}\_x$} sul registro $x$. 
+Si possono ora definire le etichette dei registri coinvolti nella MOVE, come riportato nella seguente tabella.
 \begin{table}[H]
 	\centering
 	\fontsize{10}{18}\selectfont
@@ -238,7 +239,7 @@ Si possono ora definire le etichette dei registri coinvolti nella move, come rip
 		
 		\hline
 	\end{tabular}
-	\caption{Etichette dei registri abilitati all'operazione di move}
+	\caption{Etichette dei registri abilitati all'operazione di MOVE}
 \end{table}
 \noindent
 Tali etichette possono essere definite a livello di Instruction Set, permettendo all'utente la scrittura dei registri utilizzando direttamente il nominativo nella stesura del codice assembler; es: \textit{MV DR3, ACC}.\\
@@ -350,7 +351,7 @@ La logica che pilota i segnali è di tipo combinatorio e verifica la seguente ta
 		\multicolumn{1}{c|}{-}\\
 		\hline
 	\end{tabular}
-	\caption{Tabella di verità per la sintesi della logica di move}
+	\caption{Tabella di verità per la sintesi della logica di MOVE}
 \end{table}
 \noindent
 La lettura della tabella avviene come segue: per ogni registro scelto i segnali da abilitare sono quelli aventi un valore valido nella tabella.\\
@@ -368,7 +369,7 @@ Esegue la lettura della memoria di un dato indirizzando la RAM tramite il DC. Il
 
 \newpage
 \subsubsection{Slave JPA}
-Esegue la jump immediata, aggiornando il Program Counter all'indirizzo di salto ricavato dalla memoria.
+Esegue la JUMP immediata, aggiornando il Program Counter all'indirizzo di salto ricavato dalla memoria.
 \begin{figure}[H]
 	\centering
 	\includegraphics[scale=0.43]{asm_jpa}
@@ -395,7 +396,7 @@ Esegue la scrittura del dato presente in D$\_$I/O nella memoria alla locazione i
 
 \newpage
 \subsubsection{Slave JPO$\_$JBO}
-Esegue la jump all'indirizzo dato dalla somma di una \textit{base} e un offset. Mentre l'offset proviene dalla memoria, la base può essere l'indirizzo corrente del PC o un ulteriore dato prelevato dalla memoria.
+Esegue la JUMP all'indirizzo dato dalla somma di una \textit{base} e un offset. Mentre l'offset proviene dalla memoria, la base può essere l'indirizzo corrente del PC o un ulteriore dato prelevato dalla memoria.
 \begin{figure}[H]
 	\centering
 	\includegraphics[scale=0.40]{asm_jp}
@@ -417,7 +418,7 @@ Infine, il diagramma ASM per la macchina master che esegue le fasi di fetch e de
 \par \bigskip \noindent
 FETCH:
 \begin{enumerate}
-	\item Poni PC su ADDR$\_$BUS, RAM in modalità di read.
+	\item Poni PC su ADDR$\_$BUS, RAM in modalità di READ.
 	\item Strobe REG$\_$ADDR
 	\item RIPETI: Strobe RAM e poni inv$\_$dir=1 FINCHÉ RAM$\_$data$\_$rd = 1
 	\item Strobe IR e incrementa PC

@@ -125,11 +125,12 @@ Analogamente, in riferimento al calcolo della posizione di un dato si avrà:
 In base a quanto detto fino ad ora si può procedere alla definizione dell'argomento di questa tesina. Scopo del problema è la progettazione di una UC per un'architettura di Von Neumann curando l'implementazione di parte del set di istruzioni relativo all'indirizzamento della memoria RAM interna, in cui sia prevista la gestione migliorata della memoria precedentemente discussa.\\
 In particolare è richiesta l'implementazione delle seguenti istruzioni:
 \begin{itemize}
-	\item \textbf{RD ADDR}: Esegue una READ della memoria all'indirizzo fornito attraverso il dato ADDR. Il valore letto è salvato su di un registro interno.
+	\item \textbf{RD ADDR}: Esegue una READ della memoria all'indirizzo fornito attraverso il dato ADDR. Il valore letto è salvato su di un registro interno. Per garantire l'indirizzamento di tutto lo spazio di memoria l'operando ADDR è a 2N bit.
 	\item \textbf{WR DATA, ADDR}: Esegue la scrittura del valore identificato con DATA nella locuzione di memoria RAM relativa all'indirizzo ADDR. È un'istruzione dal formato \textquotedblleft un'istruzione e due dati".
-	\item \textbf{JMP ADDR}: Esegue una JUMP incondizionale all'indirizzo presente nel dato ADDR. Tale istruzione realizza un \textquotedblleft \textit{salto immediato}". Il formato dell'istruzione è del tipo \textquotedblleft una istruzione e un dato".
-	\item \textbf{JMP OFFS}: Esegue una JUMP incondizionale all'indirizzo dato dal valore corrente di PC sommato al dato in ingresso denominato OFFS. Costituisce un'istruzione denominata \textquotedblleft \textit{salto diretto}" e prende in ingresso un unico dato.
-	\item \textbf{JMP BASE, OFFS}: Esegue una JUMP incondizionale all'indirizzo calcolato tramite somma dei due dati in ingresso BASE e OFFS. Costituisce un tipo di salto denominato \textquotedblleft \textit{salto indiretto}" e possiede un formato del tipo \textquotedblleft una istruzione e due dati".
+	Le dimensioni degli operandi: DATA N bit, ADDR 2N bit.
+	\item \textbf{JMP ADDR}: Esegue una JUMP incondizionale all'indirizzo presente nel dato ADDR. Tale istruzione realizza un \textquotedblleft \textit{salto immediato}". Il formato dell'istruzione è del tipo \textquotedblleft una istruzione e un dato" ed è a 2N bit.
+	\item \textbf{JMP OFFS}: Esegue una JUMP incondizionale all'indirizzo dato dal valore corrente di PC sommato al dato in ingresso denominato OFFS. Costituisce un'istruzione denominata \textquotedblleft \textit{salto diretto}" e prende in ingresso un unico dato. Loperando OFFS ha dimensioni pari a N bit.
+	\item \textbf{JMP BASE, OFFS}: Esegue una JUMP incondizionale all'indirizzo calcolato tramite somma dei due dati in ingresso BASE e OFFS. Costituisce un tipo di salto denominato \textquotedblleft \textit{salto indiretto}" e possiede un formato del tipo \textquotedblleft una istruzione e due dati". BASE ed OFFS sono a N bit.
 \end{itemize}
 Inoltre, dotando la CPU di un insieme di registri interni di tipo \textquotedblleft general-purpose" in appoggio al sistema di calcolo, si implementerà la seguente istruzione:
 \begin{itemize}
@@ -142,7 +143,7 @@ Dunque, in base a quanto esposto precedentemente, si parte con un sistema alla V
 \begin{figure}[H]
 	\centering
 	\includegraphics[scale=0.30]{0_ist_zero.png}
-	%\caption{Gesione della memoria in un'architettura di Von Neumann migliorata}
+	\caption{Struttura interna del sistema in esame}
 	\label{fig:ist_0}
 \end{figure}
 \noindent

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.5.3)  5 NOV 2018 23:18
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.5.3)  12 NOV 2018 14:54
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -196,6 +196,9 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \@float@everytoks=\toks16
 \@floatcapt=\box27
 )
+(/usr/local/texlive/2016/texmf-dist/tex/latex/multirow/multirow.sty
+\bigstrutjot=\dimen109
+)
 \defaultparindent=\skip44
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/tools/enumerate.sty
@@ -211,7 +214,7 @@ Language: italian 2015/03/26 v1.3n Italian support from the babel system
 (/usr/local/texlive/2016/texmf-dist/tex/generic/babel/babel.def
 File: babel.def 2016/04/23 3.9r Babel common definitions
 \babel@savecnt=\count100
-\U@D=\dimen109
+\U@D=\dimen110
 )
 \it@lettering=\count101
 \it@doublequoteactive=\count102
@@ -554,7 +557,7 @@ Package: amstext 2000/06/29 v2.01 AMS text
 (/usr/local/texlive/2016/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks21
-\ex@=\dimen110
+\ex@=\dimen111
 ))
 (/usr/local/texlive/2016/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2016/03/10 v2.15b AMS math features
@@ -563,7 +566,7 @@ Package: amsmath 2016/03/10 v2.15b AMS math features
 For additional information on amsmath, use the `?' option.
 (/usr/local/texlive/2016/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
-\pmbraise@=\dimen111
+\pmbraise@=\dimen112
 )
 (/usr/local/texlive/2016/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2016/03/08 v2.02 operator names
@@ -580,7 +583,7 @@ LaTeX Info: Redefining \dots on input line 397.
 LaTeX Info: Redefining \cdots on input line 518.
 \Mathstrutbox@=\box28
 \strutbox@=\box29
-\big@size=\dimen112
+\big@size=\dimen113
 LaTeX Font Info:    Redeclaring font encoding OML on input line 634.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 635.
 \macc@depth=\count110
@@ -593,12 +596,12 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 635.
 \column@=\count115
 \maxfields@=\count116
 \andhelp@=\toks23
-\eqnshift@=\dimen113
-\alignsep@=\dimen114
-\tagshift@=\dimen115
-\tagwidth@=\dimen116
-\totwidth@=\dimen117
-\lineht@=\dimen118
+\eqnshift@=\dimen114
+\alignsep@=\dimen115
+\tagshift@=\dimen116
+\tagwidth@=\dimen117
+\totwidth@=\dimen118
+\lineht@=\dimen119
 \@envbody=\toks24
 \multlinegap=\skip46
 \multlinetaggap=\skip47
@@ -611,14 +614,14 @@ LaTeX Info: Redefining \] on input line 2740.
 \lst@gtempboxa=\box30
 \lst@token=\toks26
 \lst@length=\count118
-\lst@currlwidth=\dimen119
+\lst@currlwidth=\dimen120
 \lst@column=\count119
 \lst@pos=\count120
-\lst@lostspace=\dimen120
-\lst@width=\dimen121
+\lst@lostspace=\dimen121
+\lst@width=\dimen122
 \lst@newlines=\count121
 \lst@lineno=\count122
-\lst@maxwidth=\dimen122
+\lst@maxwidth=\dimen123
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
@@ -640,13 +643,13 @@ Package: caption 2016/02/21 v3.3-144 Customizing captions (AR)
 (/usr/local/texlive/2016/texmf-dist/tex/latex/caption/caption3.sty
 Package: caption3 2016/02/04 v1.7-139 caption3 kernel (AR)
 Package caption3 Info: TeX engine: e-TeX on input line 67.
-\captionmargin=\dimen123
-\captionmargin@=\dimen124
-\captionwidth=\dimen125
-\caption@tempdima=\dimen126
-\caption@indent=\dimen127
-\caption@parindent=\dimen128
-\caption@hangindent=\dimen129
+\captionmargin=\dimen124
+\captionmargin@=\dimen125
+\captionwidth=\dimen126
+\caption@tempdima=\dimen127
+\caption@indent=\dimen128
+\caption@parindent=\dimen129
+\caption@hangindent=\dimen130
 )
 \c@ContinuedFloat=\count125
 Package caption Info: float package is loaded.
@@ -655,7 +658,7 @@ Package caption Info: listings package is loaded.
 )
 \c@KVtest=\count126
 \sf@farskip=\skip48
-\sf@captopadj=\dimen130
+\sf@captopadj=\dimen131
 \sf@capskip=\skip49
 \sf@nearskip=\skip50
 \c@subfigure=\count127
@@ -684,8 +687,8 @@ Package: verbatim 2014/10/28 v1.5q LaTeX2e package for verbatim enhancements
 \verbatim@line=\toks28
 \verbatim@in@stream=\read1
 )
-Package color Info: Redefining color cyan on input line 146.
-LaTeX Font Info:    Try loading font information for T1+txtt on input line 147.
+Package color Info: Redefining color cyan on input line 147.
+LaTeX Font Info:    Try loading font information for T1+txtt on input line 148.
 
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/txfonts/t1txtt.fd
@@ -693,21 +696,21 @@ File: t1txtt.fd 2000/12/15 v3.1
 ) (./Main.aux)
 \openout1 = `Main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 222.
-LaTeX Font Info:    ... okay on input line 222.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 222.
-LaTeX Font Info:    ... okay on input line 222.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 222.
-LaTeX Font Info:    ... okay on input line 222.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 222.
-LaTeX Font Info:    ... okay on input line 222.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 222.
-LaTeX Font Info:    ... okay on input line 222.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 222.
-LaTeX Font Info:    ... okay on input line 222.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 222.
-LaTeX Font Info:    ... okay on input line 222.
-LaTeX Font Info:    Try loading font information for OT1+ptm on input line 222.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 223.
+LaTeX Font Info:    ... okay on input line 223.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 223.
+LaTeX Font Info:    ... okay on input line 223.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 223.
+LaTeX Font Info:    ... okay on input line 223.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 223.
+LaTeX Font Info:    ... okay on input line 223.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 223.
+LaTeX Font Info:    ... okay on input line 223.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 223.
+LaTeX Font Info:    ... okay on input line 223.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 223.
+LaTeX Font Info:    ... okay on input line 223.
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 223.
 
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/ot1ptm.fd
@@ -716,13 +719,13 @@ File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 (/usr/local/texlive/2016/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count133
-\scratchdimen=\dimen131
+\scratchdimen=\dimen132
 \scratchbox=\box32
 \nofMPsegments=\count134
 \nofMParguments=\count135
 \everyMPshowfont=\toks29
 \MPscratchCnt=\count136
-\MPscratchDim=\dimen132
+\MPscratchDim=\dimen133
 \MPnumerator=\count137
 \makeMPintoPDFobject=\count138
 \everyMPtoPDFconversion=\toks30
@@ -741,7 +744,7 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 \AtBeginShipoutBox=\box33
-Package hyperref Info: Link coloring OFF on input line 222.
+Package hyperref Info: Link coloring OFF on input line 223.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -751,16 +754,16 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count139
 )
-LaTeX Info: Redefining \ref on input line 222.
-LaTeX Info: Redefining \pageref on input line 222.
-LaTeX Info: Redefining \nameref on input line 222.
+LaTeX Info: Redefining \ref on input line 223.
+LaTeX Info: Redefining \pageref on input line 223.
+LaTeX Info: Redefining \nameref on input line 223.
 
 (./Main.out) (./Main.out)
 \@outlinefile=\write3
 \openout3 = `Main.out'.
 
-LaTeX Info: Redefining \it@ocap on input line 222.
-LaTeX Info: Redefining \it@ccap on input line 222.
+LaTeX Info: Redefining \it@ocap on input line 223.
+LaTeX Info: Redefining \it@ccap on input line 223.
 
 
 File italian.ldf warning: 
@@ -768,7 +771,7 @@ italian.ldf    With OT1 encoding guillemets are poorly faked
 italian.ldf    Use T1 encoding
 italian.ldf    or specify a font with command \CaporaliFrom
 italian.ldf    See the documentation concerning the babel-italian typesetting 
-italian.ldf    on input line 222.
+italian.ldf    on input line 223.
 
 \c@lstlisting=\count140
 Package caption Info: Begin \AtBeginDocument code.
@@ -785,7 +788,7 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 7.
 (/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-<FIGS/logo_univ.png, id=127, 290.08376pt x 361.35pt>
+<FIGS/logo_univ.png, id=179, 290.08376pt x 361.35pt>
 File: FIGS/logo_univ.png Graphic file (type png)
  <use FIGS/logo_univ.png>
 Package pdftex.def Info: FIGS/logo_univ.png used on input line 8.
@@ -795,7 +798,7 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
 LaTeX Font Info:    Font shape `OT1/ptm/bx/sc' in size <12> not available
 (Font)              Font shape `OT1/ptm/b/sc' tried instead on input line 16.
 
-<FIGS/logo_ing.png, id=129, 203.76125pt x 192.72pt>
+<FIGS/logo_ing.png, id=181, 203.76125pt x 192.72pt>
 File: FIGS/logo_ing.png Graphic file (type png)
  <use FIGS/logo_ing.png>
 Package pdftex.def Info: FIGS/logo_ing.png used on input line 18.
@@ -814,7 +817,7 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
 {/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./FIGS/
 logo_univ.png> <./FIGS/logo_ing.png>])
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <24.88> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 234.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 235.
  (./Main.tocpdfTeX warning (ext4): destination with the same identifier (name{p
 age.1}) has been already used, duplicate ignored
 <to be read again> 
@@ -840,7 +843,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 3--6
 
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <17.28> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 7.
-<FIGS/0_von_neumann.png, id=178, 604.2575pt x 489.83pt>
+<FIGS/0_von_neumann.png, id=243, 604.2575pt x 489.83pt>
 File: FIGS/0_von_neumann.png Graphic file (type png)
 
 <use FIGS/0_von_neumann.png>
@@ -857,7 +860,7 @@ File: omsptm.fd
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <12> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 24.
  [3 <./FIGS/0_von_neumann.png>] [4]
-<FIGS/0_4004_instruction_set.png, id=195, 506.89375pt x 679.53876pt>
+<FIGS/0_4004_instruction_set.png, id=260, 506.89375pt x 679.53876pt>
 File: FIGS/0_4004_instruction_set.png Graphic file (type png)
 
 <use FIGS/0_4004_instruction_set.png>
@@ -870,25 +873,25 @@ LaTeX Font Info:    Try loading font information for OT1+pcr on input line 46.
 (/usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 )
-<FIGS/0_vn_cpu.png, id=203, 323.2075pt x 452.69125pt>
+<FIGS/0_vn_cpu.png, id=268, 323.2075pt x 452.69125pt>
 File: FIGS/0_vn_cpu.png Graphic file (type png)
  <use FIGS/0_vn_cpu.png>
 Package pdftex.def Info: FIGS/0_vn_cpu.png used on input line 79.
 (pdftex.def)             Requested size: 161.60335pt x 226.34506pt.
 
 [6] [7 <./FIGS/0_vn_cpu.png>]
-<FIGS/0_memoria_separata.png, id=221, 345.29pt x 528.97626pt>
+<FIGS/0_memoria_separata.png, id=286, 345.29pt x 528.97626pt>
 File: FIGS/0_memoria_separata.png Graphic file (type png)
 
 <use FIGS/0_memoria_separata.png>
 Package pdftex.def Info: FIGS/0_memoria_separata.png used on input line 102.
 (pdftex.def)             Requested size: 138.11354pt x 211.58675pt.
  [8] [9 <./FIGS/0_memoria_separata.png>]
-[10] <FIGS/0_ist_zero.png, id=242, 1063.975pt x 609.27625pt>
+[10] <FIGS/0_ist_zero.png, id=307, 1063.975pt x 609.27625pt>
 File: FIGS/0_ist_zero.png Graphic file (type png)
 
 <use FIGS/0_ist_zero.png>
-Package pdftex.def Info: FIGS/0_ist_zero.png used on input line 144.
+Package pdftex.def Info: FIGS/0_ist_zero.png used on input line 145.
 (pdftex.def)             Requested size: 319.19496pt x 182.78427pt.
  [11 <./FIGS/0_ist_zero.png>]) [12]
 (./Prima_Istanziazione.tex
@@ -898,7 +901,7 @@ Overfull \hbox (4.35025pt too wide) in paragraph at lines 2--2
 []\OT1/ptm/b/n/17.28 Schema a bloc-chi e de-fi-ni-zio-ne dei se-gna-li IN/OUT 
  []
 
-<FIGS/1_prima_istanziazione.png, id=254, 709.65125pt x 310.15875pt>
+<FIGS/1_prima_istanziazione.png, id=319, 709.65125pt x 310.15875pt>
 File: FIGS/1_prima_istanziazione.png Graphic file (type png)
 
 <use FIGS/1_prima_istanziazione.png>
@@ -917,147 +920,147 @@ Overfull \hbox (4.35025pt too wide) in paragraph at lines 2--2
 []\OT1/ptm/b/n/17.28 Schema a bloc-chi e de-fi-ni-zio-ne dei se-gna-li IN/OUT 
  []
 
-<FIGS/2_seconda_istanziazione.png, id=293, 995.72pt x 642.4pt>
+<FIGS/2_seconda_istanziazione.png, id=359, 995.72pt x 642.4pt>
 File: FIGS/2_seconda_istanziazione.png Graphic file (type png)
 
 <use FIGS/2_seconda_istanziazione.png>
-Package pdftex.def Info: FIGS/2_seconda_istanziazione.png used on input line 8.
+Package pdftex.def Info: FIGS/2_seconda_istanziazione.png used on input line 9.
 
 (pdftex.def)             Requested size: 557.59941pt x 359.74155pt.
  [19
 
 ] [20 <./FIGS/2_seconda_istanziazione.png>]
 LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 26.
- [21] <FIGS/2_register_bank.png, id=312, 1161.33875pt x 523.9575pt>
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 27.
+ [21] <FIGS/2_register_bank.png, id=377, 1161.33875pt x 523.9575pt>
 File: FIGS/2_register_bank.png Graphic file (type png)
 
 <use FIGS/2_register_bank.png>
-Package pdftex.def Info: FIGS/2_register_bank.png used on input line 75.
+Package pdftex.def Info: FIGS/2_register_bank.png used on input line 76.
 (pdftex.def)             Requested size: 406.47466pt x 183.38786pt.
 
-Overfull \hbox (8.13608pt too wide) in paragraph at lines 75--77
+Overfull \hbox (8.13608pt too wide) in paragraph at lines 76--78
  [][] 
  []
 
 [22 <./FIGS/2_register_bank.png>]
-<FIGS/2_registro_bidir.png, id=319, 1173.38374pt x 504.88625pt>
+<FIGS/2_registro_bidir.png, id=384, 1173.38374pt x 504.88625pt>
 File: FIGS/2_registro_bidir.png Graphic file (type png)
 
 <use FIGS/2_registro_bidir.png>
-Package pdftex.def Info: FIGS/2_registro_bidir.png used on input line 89.
+Package pdftex.def Info: FIGS/2_registro_bidir.png used on input line 90.
 (pdftex.def)             Requested size: 375.49046pt x 161.5669pt.
  [23]
-<FIGS/2_AR0.png, id=325, 1198.4775pt x 435.6275pt>
+<FIGS/2_AR0.png, id=390, 1198.4775pt x 435.6275pt>
 File: FIGS/2_AR0.png Graphic file (type png)
  <use FIGS/2_AR0.png>
-Package pdftex.def Info: FIGS/2_AR0.png used on input line 99.
+Package pdftex.def Info: FIGS/2_AR0.png used on input line 100.
 (pdftex.def)             Requested size: 383.52063pt x 139.40364pt.
 
 [24 <./FIGS/2_registro_bidir.png> <./FIGS/2_AR0.png>]
-<FIGS/2_dio.png, id=334, 1069.9975pt x 583.17876pt>
+<FIGS/2_dio.png, id=399, 1069.9975pt x 583.17876pt>
 File: FIGS/2_dio.png Graphic file (type png)
  <use FIGS/2_dio.png>
-Package pdftex.def Info: FIGS/2_dio.png used on input line 141.
+Package pdftex.def Info: FIGS/2_dio.png used on input line 142.
 (pdftex.def)             Requested size: 374.50473pt x 204.11562pt.
 
-<FIGS/2_cu.png, id=335, 1184.425pt x 648.4225pt>
+<FIGS/2_cu.png, id=400, 1184.425pt x 648.4225pt>
 File: FIGS/2_cu.png Graphic file (type png)
  <use FIGS/2_cu.png>
-Package pdftex.def Info: FIGS/2_cu.png used on input line 150.
+Package pdftex.def Info: FIGS/2_cu.png used on input line 151.
 (pdftex.def)             Requested size: 556.67984pt x 304.7586pt.
  [25 <./FIGS/2_dio.png>] [26 <./FIGS/2_cu.png>] [27]
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 236.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 237.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 236.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 237.
  [28]
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 357.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 358.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 357.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 358.
  [29]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 361.
+(hyperref)                removing `math shift' on input line 362.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 361.
+(hyperref)                removing `math shift' on input line 362.
 
-<FIGS/ASM_ram_rd.png, id=364, 732.48656pt x 830.35219pt>
+<FIGS/ASM_ram_rd.png, id=429, 732.48656pt x 830.35219pt>
 File: FIGS/ASM_ram_rd.png Graphic file (type png)
 
 <use FIGS/ASM_ram_rd.png>
-Package pdftex.def Info: FIGS/ASM_ram_rd.png used on input line 365.
+Package pdftex.def Info: FIGS/ASM_ram_rd.png used on input line 366.
 (pdftex.def)             Requested size: 366.24237pt x 415.17508pt.
  [30 <./FIGS/ASM_ram_rd.png>]
-<FIGS/asm_jpa.png, id=371, 908.64468pt x 1188.69093pt>
+<FIGS/asm_jpa.png, id=436, 908.64468pt x 1188.69093pt>
 File: FIGS/asm_jpa.png Graphic file (type png)
  <use FIGS/asm_jpa.png>
-Package pdftex.def Info: FIGS/asm_jpa.png used on input line 374.
+Package pdftex.def Info: FIGS/asm_jpa.png used on input line 375.
 (pdftex.def)             Requested size: 390.7096pt x 511.12714pt.
 
-[31 <./FIGS/asm_jpa.png>] <FIGS/asm_rd.png, id=378, 727.96968pt x 910.15031pt>
+[31 <./FIGS/asm_jpa.png>] <FIGS/asm_rd.png, id=443, 727.96968pt x 910.15031pt>
 File: FIGS/asm_rd.png Graphic file (type png)
 
 <use FIGS/asm_rd.png>
-Package pdftex.def Info: FIGS/asm_rd.png used on input line 383.
+Package pdftex.def Info: FIGS/asm_rd.png used on input line 384.
 (pdftex.def)             Requested size: 400.38457pt x 500.58423pt.
 
-Overfull \hbox (2.04599pt too wide) in paragraph at lines 383--385
+Overfull \hbox (2.04599pt too wide) in paragraph at lines 384--386
  [][] 
  []
 
-[32 <./FIGS/asm_rd.png>] <FIGS/asm_wr.png, id=385, 727.96968pt x 742.27313pt>
+[32 <./FIGS/asm_rd.png>] <FIGS/asm_wr.png, id=450, 727.96968pt x 742.27313pt>
 File: FIGS/asm_wr.png Graphic file (type png)
 
 <use FIGS/asm_wr.png>
-Package pdftex.def Info: FIGS/asm_wr.png used on input line 392.
+Package pdftex.def Info: FIGS/asm_wr.png used on input line 393.
 (pdftex.def)             Requested size: 400.38457pt x 408.2515pt.
 
-Overfull \hbox (2.04599pt too wide) in paragraph at lines 392--394
+Overfull \hbox (2.04599pt too wide) in paragraph at lines 393--395
  [][] 
  []
 
 [33 <./FIGS/asm_wr.png>]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 397.
+(hyperref)                removing `math shift' on input line 398.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 397.
+(hyperref)                removing `math shift' on input line 398.
 
-<FIGS/asm_jp.png, id=392, 1010.27437pt x 1236.87094pt>
+<FIGS/asm_jp.png, id=458, 1010.27437pt x 1236.87094pt>
 File: FIGS/asm_jp.png Graphic file (type png)
  <use FIGS/asm_jp.png>
-Package pdftex.def Info: FIGS/asm_jp.png used on input line 401.
+Package pdftex.def Info: FIGS/asm_jp.png used on input line 402.
 (pdftex.def)             Requested size: 404.10258pt x 494.73962pt.
 
-Overfull \hbox (5.764pt too wide) in paragraph at lines 401--403
+Overfull \hbox (5.764pt too wide) in paragraph at lines 402--404
  [][] 
  []
 
-[34 <./FIGS/asm_jp.png>] <FIGS/asm_mv.png, id=399, 901.86937pt x 1188.69093pt>
+[34 <./FIGS/asm_jp.png>] <FIGS/asm_mv.png, id=465, 901.86937pt x 1188.69093pt>
 File: FIGS/asm_mv.png Graphic file (type png)
 
 <use FIGS/asm_mv.png>
-Package pdftex.def Info: FIGS/asm_mv.png used on input line 410.
+Package pdftex.def Info: FIGS/asm_mv.png used on input line 411.
 (pdftex.def)             Requested size: 387.79626pt x 511.12714pt.
  [35 <./FIGS/asm_mv.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 416--417
+Underfull \hbox (badness 10000) in paragraph at lines 417--418
 
  []
 
-<FIGS/asm_master.png, id=407, 1738.99687pt x 1165.35374pt>
+<FIGS/asm_master.png, id=473, 1738.99687pt x 1165.35374pt>
 File: FIGS/asm_master.png Graphic file (type png)
 
 <use FIGS/asm_master.png>
-Package pdftex.def Info: FIGS/asm_master.png used on input line 442.
+Package pdftex.def Info: FIGS/asm_master.png used on input line 443.
 (pdftex.def)             Requested size: 608.65804pt x 407.87993pt.
 
-Overfull \hbox (9.54135pt too wide) in paragraph at lines 442--444
+Overfull \hbox (9.54135pt too wide) in paragraph at lines 443--445
  [][] 
  []
 
@@ -1067,34 +1070,199 @@ Overfull \vbox (27.68015pt too high) has occurred while \output is active []
 
 [37 <./FIGS/asm_master.png>]) (./Sintesi_in_VHDL.tex
 Capitolo 4.
-)
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 245.
- [38
+[38
 
-]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 245.
+] <FIGS/3_FPGA_arch.jpg, id=494, 602.25pt x 440.64626pt>
+File: FIGS/3_FPGA_arch.jpg Graphic file (type jpg)
+
+<use FIGS/3_FPGA_arch.jpg>
+Package pdftex.def Info: FIGS/3_FPGA_arch.jpg used on input line 9.
+(pdftex.def)             Requested size: 271.01pt x 198.28897pt.
+
+<FIGS/3_FPGA_clb.png, id=495, 351.3125pt x 157.58875pt>
+File: FIGS/3_FPGA_clb.png Graphic file (type png)
+
+<use FIGS/3_FPGA_clb.png>
+Package pdftex.def Info: FIGS/3_FPGA_clb.png used on input line 19.
+(pdftex.def)             Requested size: 281.05037pt x 126.07115pt.
+ [39 <./FIGS/3_FPGA_arch.jpg>]
+<FIGS/3_ISE_interface.png, id=501, 1283.79625pt x 775.89874pt>
+File: FIGS/3_ISE_interface.png Graphic file (type png)
+
+<use FIGS/3_ISE_interface.png>
+Package pdftex.def Info: FIGS/3_ISE_interface.png used on input line 31.
+(pdftex.def)             Requested size: 397.97273pt x 240.52612pt.
+ [40 <./FIGS/3_FPGA_clb.png>]
+<FIGS/3_ISE_isim.png, id=507, 1284.8pt x 776.9025pt>
+File: FIGS/3_ISE_isim.png Graphic file (type png)
+ <use FIGS/3_ISE_isim.png>
+Package pdftex.def Info: FIGS/3_ISE_isim.png used on input line 38.
+(pdftex.def)             Requested size: 398.28389pt x 240.83728pt.
+
+[41 <./FIGS/3_ISE_interface.png> <./FIGS/3_ISE_isim.png>]
+<FIGS/3_ise_hierarchy.png, id=517, 292.09125pt x 298.11375pt>
+File: FIGS/3_ise_hierarchy.png Graphic file (type png)
+
+<use FIGS/3_ise_hierarchy.png>
+Package pdftex.def Info: FIGS/3_ise_hierarchy.png used on input line 58.
+(pdftex.def)             Requested size: 146.04526pt x 149.0565pt.
+ [42]
+<FIGS/3_ise_topmodule.png, id=523, 420.57124pt x 439.6425pt>
+File: FIGS/3_ise_topmodule.png Graphic file (type png)
+
+<use FIGS/3_ise_topmodule.png>
+Package pdftex.def Info: FIGS/3_ise_topmodule.png used on input line 69.
+(pdftex.def)             Requested size: 252.3447pt x 263.78752pt.
+ [43 <./FIGS/3_ise_hierarchy.png>]
+<FIGS/3_ise_ram.png, id=531, 492.84125pt x 411.5375pt>
+File: FIGS/3_ise_ram.png Graphic file (type png)
+
+<use FIGS/3_ise_ram.png>
+Package pdftex.def Info: FIGS/3_ise_ram.png used on input line 81.
+(pdftex.def)             Requested size: 246.42001pt x 205.76825pt.
+ [44 <./FIGS/3_ise_topmodule.png>]
+<FIGS/3_ise_ram1.png, id=538, 894.34125pt x 453.695pt>
+File: FIGS/3_ise_ram1.png Graphic file (type png)
+
+<use FIGS/3_ise_ram1.png>
+Package pdftex.def Info: FIGS/3_ise_ram1.png used on input line 89.
+(pdftex.def)             Requested size: 357.73016pt x 181.47478pt.
+
+<FIGS/3_ise_ram_proc.png, id=540, 895.345pt x 455.7025pt>
+File: FIGS/3_ise_ram_proc.png Graphic file (type png)
+
+<use FIGS/3_ise_ram_proc.png>
+Package pdftex.def Info: FIGS/3_ise_ram_proc.png used on input line 97.
+(pdftex.def)             Requested size: 358.13165pt x 182.27776pt.
+ [45 <./FIGS/3_ise_ram.png> <./FIGS/3_ise_ram1.png>] <FIGS/3_ise_internal.png, 
+id=550, 596.9502pt x 845.0772pt>
+File: FIGS/3_ise_internal.png Graphic file (type png)
+
+<use FIGS/3_ise_internal.png>
+Package pdftex.def Info: FIGS/3_ise_internal.png used on input line 106.
+(pdftex.def)             Requested size: 358.17288pt x 507.05023pt.
+ [46 <./FIGS/3_ise_ram_proc.png>]
+<FIGS/3_ise_vhdl_cpu.pdf, id=557, 614.295pt x 794.97pt>
+File: FIGS/3_ise_vhdl_cpu.pdf Graphic file (type pdf)
+
+<use FIGS/3_ise_vhdl_cpu.pdf>
+Package pdftex.def Info: FIGS/3_ise_vhdl_cpu.pdf used on input line 114.
+(pdftex.def)             Requested size: 380.85895pt x 492.87631pt.
+ [47 <./FIGS/3_ise_internal.png>]
+<FIGS/3_ise_master.png, id=565, 928.46875pt x 631.35875pt>
+File: FIGS/3_ise_master.png Graphic file (type png)
+
+<use FIGS/3_ise_master.png>
+Package pdftex.def Info: FIGS/3_ise_master.png used on input line 122.
+(pdftex.def)             Requested size: 389.95422pt x 265.16887pt.
+ [48 <./FIGS/3_ise_vhdl_cpu.pdf>]
+<FIGS/3_sim_bidir.png, id=586, 1021.8175pt x 455.7025pt>
+File: FIGS/3_sim_bidir.png Graphic file (type png)
+
+<use FIGS/3_sim_bidir.png>
+Package pdftex.def Info: FIGS/3_sim_bidir.png used on input line 131.
+(pdftex.def)             Requested size: 408.71976pt x 182.27776pt.
+
+Overfull \hbox (10.38118pt too wide) in paragraph at lines 131--132
+ [][] 
+ []
+
+<FIGS/3_sim_msf_rdram.png, id=587, 1020.81375pt x 453.695pt>
+File: FIGS/3_sim_msf_rdram.png Graphic file (type png)
+
+<use FIGS/3_sim_msf_rdram.png>
+Package pdftex.def Info: FIGS/3_sim_msf_rdram.png used on input line 137.
+(pdftex.def)             Requested size: 408.31827pt x 181.47478pt.
+
+Overfull \hbox (9.97969pt too wide) in paragraph at lines 137--138
+ [][] 
+ []
+
+[49 <./FIGS/3_ise_master.png>]
+<FIGS/3_sim_ram.png, id=594, 1020.81375pt x 449.68pt>
+File: FIGS/3_sim_ram.png Graphic file (type png)
+ <use FIGS/3_sim_ram.png>
+Package pdftex.def Info: FIGS/3_sim_ram.png used on input line 143.
+(pdftex.def)             Requested size: 408.31827pt x 179.8688pt.
+
+Overfull \hbox (9.97969pt too wide) in paragraph at lines 143--144
+ [][] 
+ []
+
+[50 <./FIGS/3_sim_bidir.png> <./FIGS/3_sim_msf_rdram.png>]
+<FIGS/3_sim_pgm.png, id=604, 1017.8025pt x 454.69875pt>
+File: FIGS/3_sim_pgm.png Graphic file (type png)
+
+<use FIGS/3_sim_pgm.png>
+Package pdftex.def Info: FIGS/3_sim_pgm.png used on input line 159.
+(pdftex.def)             Requested size: 407.1138pt x 181.87627pt.
+
+Overfull \hbox (8.77522pt too wide) in paragraph at lines 159--160
+ [][] 
+ []
+
+[51 <./FIGS/3_sim_ram.png>] [52 <./FIGS/3_sim_pgm.png>]
+<FIGS/3_sp3.png, id=625, 1118.1775pt x 313.17pt>
+File: FIGS/3_sp3.png Graphic file (type png)
+ <use FIGS/3_sp3.png>
+Package pdftex.def Info: FIGS/3_sp3.png used on input line 186.
+(pdftex.def)             Requested size: 447.26308pt x 125.26576pt.
+
+Overfull \hbox (48.9245pt too wide) in paragraph at lines 186--187
+ [][] 
+ []
+
+<FIGS/3_sp6.png, id=626, 1124.2pt x 498.86375pt>
+File: FIGS/3_sp6.png Graphic file (type png)
+ <use FIGS/3_sp6.png>
+Package pdftex.def Info: FIGS/3_sp6.png used on input line 192.
+(pdftex.def)             Requested size: 449.67204pt x 199.54196pt.
+
+Overfull \hbox (51.33347pt too wide) in paragraph at lines 192--193
+ [][] 
+ []
+
+[53 <./FIGS/3_sp3.png> <./FIGS/3_sp6.png>]
+Underfull \hbox (badness 1859) in paragraph at lines 234--234
+[]\OT1/ptm/m/n/12 Tabella 4.1: |Com-pa-ra-zio-ne dei ri-tar-di e del-la mas-si-
+ma fre-quen-za di clock
+ []
+
+
+Overfull \hbox (28.39844pt too wide) in paragraph at lines 244--293
+ [][] 
+ []
+
+[54] <FIGS/3_ise_area.png, id=641, 496.85625pt x 572.1375pt>
+File: FIGS/3_ise_area.png Graphic file (type png)
+
+<use FIGS/3_ise_area.png>
+Package pdftex.def Info: FIGS/3_ise_area.png used on input line 299.
+(pdftex.def)             Requested size: 273.27177pt x 314.67659pt.
+ [55 <./FIGS/3_ise_area.png>]
+Overfull \hbox (9.95927pt too wide) in paragraph at lines 373--399
+ [][] 
+ []
+
+) [56]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 246.
+ [57]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 246.
  (./Main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 245.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 245.
-
-
-Package rerunfilecheck Warning: File `Main.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `Main.out':
-(rerunfilecheck)             Before: 3010B79FC43D006BA2B593156629143C;2275
-(rerunfilecheck)             After:  87E771A182236117779042A816666B31;2275.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 245.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 246.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 246.
+Package rerunfilecheck Info: File `Main.out' has not changed.
+(rerunfilecheck)             Checksum: 300630A1EA0D72A36B8F24DECF2AF7A4;3148.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 246.
  ) 
 Here is how much of TeX's memory you used:
- 10543 strings out of 493014
- 151009 string characters out of 6133352
- 281244 words of memory out of 5000000
- 13767 multiletter control sequences out of 15000+600000
+ 10747 strings out of 493014
+ 154856 string characters out of 6133352
+ 283843 words of memory out of 5000000
+ 13884 multiletter control sequences out of 15000+600000
  38754 words of font info for 82 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 44i,14n,43p,1020b,1054s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 44i,14n,43p,1030b,1054s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/te
 xlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/tex
@@ -1108,10 +1276,10 @@ t/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/ty
 pe1/urw/times/utmbi8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/t
 imes/utmr8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/times/utmri
 8a.pfb>
-Output written on Main.pdf (40 pages, 1097757 bytes).
+Output written on Main.pdf (59 pages, 1987220 bytes).
 PDF statistics:
- 497 PDF objects out of 1000 (max. 8388607)
- 397 compressed objects within 4 object streams
- 113 named destinations out of 1000 (max. 500000)
- 354 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 741 PDF objects out of 1000 (max. 8388607)
+ 581 compressed objects within 6 object streams
+ 176 named destinations out of 1000 (max. 500000)
+ 553 words of extra memory for PDF output out of 10000 (max. 10000000)
 

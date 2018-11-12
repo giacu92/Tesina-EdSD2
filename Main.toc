@@ -22,7 +22,7 @@
 \contentsline {subsection}{\numberline {3.3.2}Registro IN-OUT}{25}{subsection.3.3.2}
 \contentsline {subsection}{\numberline {3.3.3}Unit\IeC {\`a} di controllo: CU}{26}{subsection.3.3.3}
 \contentsline {subsubsection}{\numberline {3.3.3.1}Segnali interni}{27}{subsubsection.3.3.3.1}
-\contentsline {subsubsection}{\numberline {3.3.3.2}Logica di Move}{28}{subsubsection.3.3.3.2}
+\contentsline {subsubsection}{\numberline {3.3.3.2}Logica di MOVE}{28}{subsubsection.3.3.3.2}
 \contentsline {subsubsection}{\numberline {3.3.3.3}Slave RD$\_$RAM}{30}{subsubsection.3.3.3.3}
 \contentsline {subsubsection}{\numberline {3.3.3.4}Slave JPA}{31}{subsubsection.3.3.3.4}
 \contentsline {subsubsection}{\numberline {3.3.3.5}Slave RD}{32}{subsubsection.3.3.3.5}
@@ -30,4 +30,17 @@
 \contentsline {subsubsection}{\numberline {3.3.3.7}Slave JPO$\_$JBO}{34}{subsubsection.3.3.3.7}
 \contentsline {subsubsection}{\numberline {3.3.3.8}Slave MV}{35}{subsubsection.3.3.3.8}
 \contentsline {subsubsection}{\numberline {3.3.3.9}ASM MASTER}{36}{subsubsection.3.3.3.9}
-\contentsline {chapter}{\numberline {4}Sintesi in VHDL}{38}{chapter.4}
+\contentsline {chapter}{\numberline {4}Descrizione e sintesi del progetto in VHDL}{38}{chapter.4}
+\contentsline {section}{\numberline {4.1}FPGA: struttura interna}{38}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}CLB}{39}{subsection.4.1.1}
+\contentsline {section}{\numberline {4.2}Ambiente di sviluppo ISE Design Suite}{40}{section.4.2}
+\contentsline {section}{\numberline {4.3}Descrizione in VHDL}{42}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}Top Module}{43}{subsection.4.3.1}
+\contentsline {subsection}{\numberline {4.3.2}RAM}{44}{subsection.4.3.2}
+\contentsline {subsection}{\numberline {4.3.3}CPU}{47}{subsection.4.3.3}
+\contentsline {subsection}{\numberline {4.3.4}Simulazioni}{49}{subsection.4.3.4}
+\contentsline {section}{\numberline {4.4}Analisi dei risultati ottenuti}{53}{section.4.4}
+\contentsline {subsection}{\numberline {4.4.1}Performance}{54}{subsection.4.4.1}
+\contentsline {subsection}{\numberline {4.4.2}Area occupata}{54}{subsection.4.4.2}
+\contentsline {subsection}{\numberline {4.4.3}Power}{56}{subsection.4.4.3}
+\contentsline {section}{\numberline {4.5}Conclusioni}{56}{section.4.5}
